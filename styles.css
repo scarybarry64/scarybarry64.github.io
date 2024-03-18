@@ -1,0 +1,91 @@
+/* General */
+
+body
+{
+    background-color: #222323;
+    color: #f0f6f0;
+    padding: 150px 300px 400px 300px;
+    font-size: 20px;
+}
+
+/* Header */
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+}
+
+/* Name Info */
+
+.name
+{
+    margin: 0;
+    font-size: 80px;
+}
+
+.career-titles
+{
+    font-size: 35px;
+}
+
+/* Nav Bar */
+
+.nav-bar
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.nav-bar-link
+{
+    margin: 0;
+}
+
+/* Games Portfolio */
+
+.portfolio-grid
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+    padding-top: 200px;
+    justify-items: center;
+}
+
+.game-container
+{
+    display: grid;
+    grid-template-columns: 1fr 800px;
+    column-gap: 40px;
+}
+
+.game-thumbnail
+{
+    width: 512px;
+    height: 384px;
+}
+
+/* .game-info
+{
+    width: 600px;
+} */
+
+.game-title
+{
+    font-size: 40px;
+    margin-top: 0px;
+}
+
+.game-date
+{
+    font-size: 30px;
+}
+
+.game-summary
+{
+    line-height: 30px;
+}
