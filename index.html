@@ -4,33 +4,49 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scaler=1.0">
         <title>Barry Day | Game Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="header">
-            <div class="name-info-container">
-                <p class="name">Barry Day</p>
-                <p class="career-titles">Programmer | Designer</p>
+        <header>
+            <div class="header-1">
+                <div class="name-header">
+                    <p class="name">Barry Day</p>
+                    <p class="roles">Game Designer | Gameplay Programmer</p>
+                </div>
+                <nav class="nav-section">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html">Games</a>
+                    <a class="nav-link" href="index.html">About</a>
+                    <a class="nav-link" href="media/resume.pdf">Resume</a>
+                </nav>
             </div>
-            <nav class="nav-section">
-                <div class="nav-section-link-container">
-                    <a class="nav-section-link" href="index.html">Home</a>
+            <div class="header-2">
+                <img class="portrait" src="media/portrait.png">
+                <div class="social-media-header">
+                    <div class="social-media-icon-container">
+                        <img class="social-media-icon" src="media/icons/email-icon.jpg">
+                    </div>
+                    <div class="social-media-icon-container">
+                        <img class="social-media-icon" src="media/icons/linkedin-icon.jpg">
+                    </div>
+                    <div class="social-media-icon-container">
+                        <img class="social-media-icon" src="media/icons/github-icon.png">
+                    </div>
+                    <div class="social-media-icon-container">
+                        <img class="social-media-icon" src="media/icons/itchio-icon.png">
+                    </div>
                 </div>
-                <div class="nav-section-link-container">
-                    <a class="nav-section-link" href="media/resume.pdf">Resume</a>
-                </div>
-                <div class="nav-section-link-container">
-                    <a class="nav-section-link" href="index.html">About</a>
-                </div>
-            </nav>
+            </div>
         </header>
         <main>
-
-            <section class="portfolio-grid">
-
-                <div class="game-container">
+            <section class="games-section">
+                
+                <div class="game">
                     <div class="game-thumbnail-container">
-                        <img class="game-thumbnail" src="media/lastlunarair-thumbnail.png">
+                        <img class="game-thumbnail" src="media/thumbnails/lastlunarair-thumbnail.png">
                     </div>
                     <div class="game-info-container">
                         <p class="game-title">
@@ -46,17 +62,17 @@
                             Built in Unity with a custom physics engine, retro spritework, and original SFX/music. Made for my senior capstone, further expanded on since then.
                         </p>
                         <button class="game-play-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
-                            Play
+                            PLAY
                         </button>
-                        <button class="game-play-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
-                            More
+                        <button class="game-more-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
+                            MORE
                         </button>
                     </div>
                 </div>
 
-                <div class="game-container">
+                <div class="game">
                     <div class="game-thumbnail-container">
-                        <img class="game-thumbnail" src="media/horror-thumbnail.png">
+                        <img class="game-thumbnail" src="media/thumbnails/horror-thumbnail.png">
                     </div>
                     <div class="game-info-container">
                         <p class="game-title">N64 Horror Game</p>
@@ -69,9 +85,9 @@
                     </div>
                 </div>
 
-                <div class="game-container">
+                <div class="game">
                     <div class="game-thumbnail-container">
-                        <img class="game-thumbnail" src="media/sallysaysdie-thumbnail.png">
+                        <img class="game-thumbnail" src="media/thumbnails/sallysaysdie-thumbnail.png">
                     </div>
                     <div class="game-info-container">
                         <p class="game-title">Sally Says Die</p>
@@ -84,9 +100,9 @@
                     </div>
                 </div>
 
-                <div class="game-container">
+                <div class="game">
                     <div class="game-thumbnail-container">
-                        <img class="game-thumbnail" src="media/lastlunarair-thumbnail.png">
+                        <img class="game-thumbnail" src="media/thumbnails/lastlunarair-thumbnail.png">
                     </div>
                     <div class="game-info-container">
                         <p class="game-title">
@@ -104,9 +120,9 @@
                     </div>
                 </div>
 
-                <div class="game-container">
+                <div class="game">
                     <div class="game-thumbnail-container">
-                        <img class="game-thumbnail" src="media/intergalacticburgerwar-thumbnail.png">
+                        <img class="game-thumbnail" src="media/thumbnails/intergalacticburgerwar-thumbnail.png">
                     </div>
                     <div class="game-info-container">
                         <p class="game-title">Intergalactic Burger War</p>

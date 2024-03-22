@@ -1,0 +1,146 @@
+/* General */
+
+body
+{
+    background-color: white;
+    color: black;
+    padding: 120px 200px 400px 180px;
+    font-family: "Anek Malayalam", sans-serif;
+    font-size: 20px;
+}
+
+p
+{
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+header
+{
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.header-1, .header-2
+{
+    display: block;
+    position: relative;
+}
+
+/* Name Header */
+
+.name-header
+{
+    margin-top: 80px;
+}
+
+.name
+{
+    font-size: 80px;
+    color: lightseagreen;
+}
+
+/* Portrait */
+
+.portrait
+{
+    width: 300px;
+    border-radius: 150px;
+}
+
+
+/* Social Media Header */
+
+.social-media-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+.social-media-icon
+{
+    width: 50px;
+}
+
+/* Nav Header */
+
+.nav-section
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-link
+{
+    margin: 0;
+    font-size: 40px;
+
+}
+
+/* Games Section */
+
+.games-section
+{
+    display: block;
+    /* grid-template-columns: 1fr; */
+    /* row-gap: 100px; */
+    /* margin-bottom: 100px;
+    padding-top: 200px; */
+    justify-items: center;
+}
+
+.game
+{
+    display: flex;
+    /* grid-template-columns: 1fr 800px; */
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    margin-bottom: 100px;
+}
+
+.game-thumbnail
+{
+    width: 384px;
+    height: 288px;
+}
+
+.game-title
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.game-date
+{
+    font-size: 30px;
+}
+
+.game-summary
+{
+    line-height: 30px;
+}
+
+.game-play-button, .game-more-button
+{
+    background-color:  lightseagreen;
+    color: #222323;
+    font-size: 22px;
+    width: 100px;
+    height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
