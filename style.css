@@ -34,19 +34,27 @@ button
     cursor: pointer;
 }
 
-/* Nav Header */
+/* Header */
 
-.nav-header
+.header
 {
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    right: 10%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
-    background-color: #F9F9F9;
-    column-gap: 100px;
+    background-color: #232C33;
 }
+
+.home
+{
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+}
+
 
 .web-nav-header
 {
@@ -54,19 +62,21 @@ button
     flex-direction: row;
     column-gap: 40px;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-link
 {
     font-size: 24px;
-    text-decoration: underline 1px #F9F9F9;
-    text-underline-offset: 1rem;
+    text-decoration: underline 1px #232C33;
+    text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
+    color: #F9F9F9;
 }
 
 .nav-link:hover
 {
-    text-decoration-color: #232C33;
+    text-decoration-color: #F9F9F9;
 }
 
 .social-media-nav-header
@@ -74,6 +84,7 @@ button
     display: flex;
     align-items: center;
     column-gap: 10px;
+    margin-right: 400px;
 }
 
 .social-media-button
@@ -91,9 +102,9 @@ button
     width: 50px;
 }
 
-/* Title Section */
+/* Title */
 
-.title-section
+.title
 {
     display: flex;
     flex-direction: row;
@@ -137,9 +148,9 @@ button
     border-radius: 200px;
 }
 
-/* Games Section */
+/* Main */
 
-.games-section
+.main
 {
     display: block;
     /* grid-template-columns: 1fr; */
