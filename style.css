@@ -10,7 +10,7 @@ body
 {
     background-color: white;
     color: black;
-    padding: 120px 200px 180px 180px;
+    padding: 120px 240px 180px 240px;
     font-family: "Anek Malayalam", sans-serif;
     font-size: 20px;
 }
@@ -25,8 +25,9 @@ header
 {
     display: flex;
     flex-direction: row;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
+    margin-right: 100px;
     margin-bottom: 140px;
 }
 
@@ -87,9 +88,10 @@ footer p
 {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
-    position: absolute;
-    bottom: 0;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 100px;
 }
 
 .nav-link
@@ -114,11 +116,32 @@ footer p
 
 .game
 {
-    display: flex;
-    /* grid-template-columns: 1fr 800px; */
-    grid-template-columns: 1fr 1fr;
-    column-gap: 40px;
+    display: block;
     margin-bottom: 180px;
+}
+
+.game-title-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: black 3px solid;
+    margin-bottom: 24px;
+}
+
+.game-info-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.game-thumbnail-container
+{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 40px;
 }
 
 .game-thumbnail
@@ -127,17 +150,9 @@ footer p
     height: 288px;
 }
 
-.game-title-container
-{
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-}
-
 .game-title
 {
     font-size: 40px;
-    margin-bottom: 20px;
 }
 
 .game-date
@@ -148,6 +163,7 @@ footer p
 .game-summary
 {
     line-height: 30px;
+    margin-top: 40px;
 }
 
 .game-play-button, .game-more-button
@@ -159,4 +175,5 @@ footer p
     height: 60px;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 40px;
 }
