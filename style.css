@@ -1,31 +1,37 @@
 /* General */
 
+:root
+{
+    --text-color-primary: #272932;
+    --background-color-primary: #F7FFF7;
+    --background-color-secondary: #896A67;
+    --accent-color-primary: #FF715B;
+    --accent-color-secondary: #4ECDC4;
+    --side-margin: 10rem;
+}
+
 *
 {
     margin: 0;
     padding: 0;
+    color: var(--text-color-primary);
+    text-decoration: none;
 }
 
 body
 {
-    background-color: #F9F9F9;
-    color: #232C33;
+    background-color: var(--background-color-primary);
     font-family: "Anek Malayalam", sans-serif;
     font-size: 1rem;
     margin: 0;
-}
-
-a
-{
-    text-decoration: none;
-    color: #232C33;
 }
 
 footer p
 {
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 180px;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
 }
 
 button
@@ -38,53 +44,53 @@ button
 .header
 {
     position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: #232C33;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--accent-color-primary);
 }
 
-.home
+.home-link-container
 {
-    /* margin-left: 500px; */
     display: flex;
     align-items: center;
+    margin-left: var(--side-margin);
+    margin-right: 30rem;
 }
 
 
-.web-nav-header
+.nav-links-container
 {
     display: flex;
     flex-direction: row;
-    column-gap: 40px;
+    column-gap: 1rem;
     align-items: center;
     justify-content: center;
 }
 
 .nav-link
 {
-    font-size: 24px;
-    text-decoration: underline 1px #232C33;
+    font-size: 1.2rem;
+    text-decoration: underline 1px var(--accent-color-primary);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
-    color: #F9F9F9;
 }
 
 .nav-link:hover
 {
-    text-decoration-color: #F9F9F9;
+    text-decoration-color: var(--text-color-primary);
 }
 
-.social-media-nav-header
+.social-media-buttons-container
 {
     display: flex;
     align-items: center;
-    column-gap: 10px;
-    /* margin-right: 400px; */
+    column-gap: 1rem;
+    margin-right: var(--side-margin);
 }
 
 .social-media-button
@@ -108,39 +114,31 @@ button
 {
     display: flex;
     flex-direction: row;
-    grid-template-columns: 1fr 1fr;
-    margin-right: 100px;
-    margin-bottom: 140px;
-    justify-content: center;
-    column-gap: 400px;
+    justify-content: space-between;
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+    margin-top: 10rem;
+    margin-bottom: 8rem;
 }
 
-.header-1, .header-2
+.name-container
 {
-    display: block;
-    position: relative;
-}
-
-
-/* Name Header */
-
-.name-header
-{
-    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
 }
 
 .name
 {
-    font-size: 100px;
-    color: #F71735;
+    font-size: 5rem;
+    color: var(--accent-color-primary);
+    font-weight: 500;
 }
 
 .roles
 {
-    font-size: 40px;
+    font-size: 2rem;
 }
-
-/* Portrait */
 
 .portrait
 {
@@ -154,9 +152,8 @@ button
 {
     display: block;
     justify-items: center;
-    padding-top: 40px;
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
 }
 
 .game
@@ -207,11 +204,10 @@ button
 
 .game-summary
 {
-    line-height: 2rem;
-    /* margin-top: 40px; */
+    line-height: 2rem;/
 }
 
-.tools-used
+.skills-used
 {
     display: flex;
     flex-direction: row;
@@ -238,14 +234,12 @@ button
 
 .game-play-button
 {
-    background-color:  #F71735;
-    color: #F9F9F9;
-    border-color: #F71735;
+    background-color: var(--accent-color-primary);
+    border-color: var(--accent-color-primary);
 }
 
 .game-more-button
 {
-    background-color: #232C33;
-    color: #F9F9F9;
-    border-color: #232C33;
+    background-color: var(--background-color-secondary);
+    border-color: var(--background-color-secondary);
 }
