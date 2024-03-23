@@ -10,9 +10,8 @@ body
 {
     background-color: #F9F9F9;
     color: #232C33;
-    padding: 200px 240px 180px 240px;
     font-family: "Anek Malayalam", sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -39,8 +38,9 @@ button
 .header
 {
     position: fixed;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     top: 0;
     left: 0;
     right: 0;
@@ -50,7 +50,7 @@ button
 
 .home
 {
-    margin-left: 500px;
+    /* margin-left: 500px; */
     display: flex;
     align-items: center;
 }
@@ -84,7 +84,7 @@ button
     display: flex;
     align-items: center;
     column-gap: 10px;
-    margin-right: 400px;
+    /* margin-right: 400px; */
 }
 
 .social-media-button
@@ -153,18 +153,37 @@ button
 .main
 {
     display: block;
-    /* grid-template-columns: 1fr; */
-    /* row-gap: 100px; */
-    /* margin-bottom: 100px;
-    padding-top: 200px; */
     justify-items: center;
     padding-top: 40px;
+    margin-left: 12rem;
+    margin-right: 12rem;
 }
 
 .game
 {
-    display: block;
-    margin-bottom: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 4rem;
+}
+
+.game-thumbnail-container
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+.game-thumbnail
+{
+    /* width: 384px;
+    height: 288px; */
+}
+
+.game-info
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
 .game-title-container
@@ -172,54 +191,61 @@ button
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: black 3px solid;
-    margin-bottom: 24px;
-}
-
-.game-info-container
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 100px;
-}
-
-.game-thumbnail-container
-{
-    display: flex;
-    align-items: flex-start;
-    margin-top: 40px;
-}
-
-.game-thumbnail
-{
-    width: 384px;
-    height: 288px;
+    border-bottom: black 2px solid;
 }
 
 .game-title
 {
-    font-size: 40px;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .game-date
 {
-    font-size: 30px;
+    font-size: 1.5rem;
 }
 
 .game-summary
 {
-    line-height: 30px;
-    margin-top: 40px;
+    line-height: 2rem;
+    /* margin-top: 40px; */
+}
+
+.tools-used
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.game-buttons-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3rem;
 }
 
 .game-play-button, .game-more-button
 {
-    background-color:  lightseagreen;
-    color: #222323;
-    font-size: 22px;
-    width: 100px;
-    height: 60px;
-    font-weight: bold;
+    font-size: 1rem;
+    width: 6rem;
+    height: 2rem;
+    font-weight: 500;
     margin-top: 40px;
+    border-radius: 2rem;
+}
+
+.game-play-button
+{
+    background-color:  #F71735;
+    color: #F9F9F9;
+    border-color: #F71735;
+}
+
+.game-more-button
+{
+    background-color: #232C33;
+    color: #F9F9F9;
+    border-color: #232C33;
 }
