@@ -2,12 +2,12 @@
 
 :root
 {
-    --background-color-primary: #222323FF;
+    --background-color-primary: #f0f6f0FF;
     --background-color-primary-alphazero: #22232300;
-    --background-color-secondary: #222323FF;
-    --text-color-primary: #f0f6f0FF;
-    --accent-color-primary: #f0f6f0FF;
-    --accent-color-secondary: #f0f6f0FF;
+    --background-color-secondary: #f0f6f0FF;
+    --text-color-primary: #222323FF;
+    --accent-color-primary: #222323FF;
+    --accent-color-secondary: #222323FF;
     --side-margin: 10rem;
 
     font-family: Inter, sans-serif;
@@ -54,6 +54,20 @@ button
 
 /* Header */
 
+.nav-header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    margin-bottom: 10rem;
+    padding-bottom: 1rem;
+    margin-left: 24rem;
+    margin-right: 24rem;
+    border-bottom: 1px solid #22232361;
+}
+
+
 .header
 {
     position: fixed;
@@ -78,15 +92,6 @@ button
     18%, 100% { background-color: var(--background-color-primary); }
 }
 
-/* .line
-{
-    border-bottom: 1px solid var(--text-color-primary);
-    position: fixed;
-    left: 0;
-    margin-left: 6rem;
-    width: 48rem;
-} */
-
 .home-link-container
 {
     position: fixed;
@@ -109,6 +114,7 @@ button
     display: flex;
     flex-direction: row;
     column-gap: 1.4rem;
+    justify-content: center;
 }
 
 .nav-link
@@ -130,7 +136,6 @@ button
     display: flex;
     align-items: center;
     column-gap: 1rem;
-    margin-left: 3rem;
 }
 
 .social-media-button
@@ -140,12 +145,12 @@ button
 
 .email-icon
 {
-    width: 3rem;
+    width: 2.8rem;
 }
 
 .linkedin-icon, .github-icon, .itchio-icon
 {
-    width: 2.6rem;
+    width: 2rem;
 }
 
 /* Title */
@@ -153,11 +158,10 @@ button
 .title
 {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     column-gap: 3rem;
-    margin-left: 6rem;
-    margin-bottom: 10rem;
+    margin-left: -4rem;
+    margin-bottom: 5rem;
     margin-top: 6rem;
 }
 
@@ -170,22 +174,23 @@ button
 .name
 {
     font-size: 4rem;
-    color: var(--accent-color-primary);
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.roles
+.career-role
 {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 100;
     margin-top: 1rem;
     margin-left: 0.3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
 }
 
 .portrait
 {
-    width: 16rem;
-    border-radius: 8rem;
+    width: 12rem;
 }
 
 /* Main */
@@ -199,8 +204,8 @@ button
     display: flex;
     flex-direction: column;
     row-gap: 10rem;
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
 }
 
 .game
