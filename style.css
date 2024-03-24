@@ -2,28 +2,39 @@
 
 :root
 {
-    --text-color-primary: #272932;
-    --background-color-primary: #F7FFF7;
-    --background-color-secondary: #896A67;
-    --accent-color-primary: #FF715B;
-    --accent-color-secondary: #4ECDC4;
+    --background-color-primary: #222323;
+    --background-color-secondary: #222323;
+    --text-color-primary: #f0f6f0;
+    --accent-color-primary: #f0f6f0;
+    --accent-color-secondary: #f0f6f0;
     --side-margin: 10rem;
+
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    font-size: 1rem;
+}
+
+@supports (font-variation-settings: normal) 
+{
+    :root { font-family: InterVariable, sans-serif; }
 }
 
 *
 {
-    margin: 0;
-    padding: 0;
     color: var(--text-color-primary);
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 body
 {
     background-color: var(--background-color-primary);
-    font-family: "Anek Malayalam", sans-serif;
-    font-size: 1rem;
-    margin: 0;
+}
+
+p
+{
+    font-weight:200;
 }
 
 footer p
@@ -37,6 +48,7 @@ footer p
 button
 {
     cursor: pointer;
+    border: none;
 }
 
 /* Header */
@@ -47,12 +59,22 @@ button
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--accent-color-primary);
+    justify-content: end;
+    align-items: center;
+    padding-top: 2rem;
+    padding-right: 4rem;
 }
+
+/* .line
+{
+    border-bottom: 1px solid var(--text-color-primary);
+    position: fixed;
+    left: 0;
+    margin-left: 6rem;
+    width: 48rem;
+} */
 
 .home-link-container
 {
@@ -67,15 +89,14 @@ button
 {
     display: flex;
     flex-direction: row;
-    column-gap: 1rem;
-    align-items: center;
-    justify-content: center;
+    column-gap: 1.4rem;
 }
 
 .nav-link
 {
     font-size: 1.2rem;
-    text-decoration: underline 1px var(--accent-color-primary);
+    font-weight: 200;
+    text-decoration: underline 1px var(--background-color-primary);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
 }
@@ -90,7 +111,7 @@ button
     display: flex;
     align-items: center;
     column-gap: 1rem;
-    margin-right: var(--side-margin);
+    margin-left: 3rem;
 }
 
 .social-media-button
@@ -100,12 +121,12 @@ button
 
 .email-icon
 {
-    width: 60px;
+    width: 3rem;
 }
 
 .linkedin-icon, .github-icon, .itchio-icon
 {
-    width: 50px;
+    width: 2.6rem;
 }
 
 /* Title */
@@ -114,46 +135,53 @@ button
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: var(--side-margin);
-    margin-right: var(--side-margin);
-    margin-top: 10rem;
-    margin-bottom: 8rem;
+    justify-content: start;
+    column-gap: 3rem;
+    margin-left: 6rem;
+    margin-bottom: 10rem;
+    margin-top: 6rem;
 }
 
 .name-container
 {
     display: flex;
     flex-direction: column;
-    padding-top: 4rem;
 }
 
 .name
 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--accent-color-primary);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .roles
 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-left: 0.3rem;
 }
 
 .portrait
 {
-    width: 400px;
-    border-radius: 200px;
+    width: 16rem;
+    border-radius: 8rem;
 }
 
 /* Main */
 
 .main
 {
-    display: block;
-    justify-items: center;
-    margin-left: var(--side-margin);
-    margin-right: var(--side-margin);
+    /* display: block;
+    justify-items: center; */
+    /* display: grid;
+    grid-template-columns: 30rem 30rem; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
 
 .game
@@ -170,11 +198,11 @@ button
     align-items: flex-start;
 }
 
-.game-thumbnail
+/* .game-thumbnail
 {
-    /* width: 384px;
-    height: 288px; */
-}
+    width: 384px;
+    height: 288px;
+} */
 
 .game-info
 {
@@ -187,8 +215,7 @@ button
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    border-bottom: black 2px solid;
+    justify-content: start;
 }
 
 .game-title
@@ -200,6 +227,9 @@ button
 .game-date
 {
     font-size: 1.5rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+    border-left: 1px solid var(--text-color-primary);
 }
 
 .game-summary
@@ -229,17 +259,18 @@ button
     height: 2rem;
     font-weight: 500;
     margin-top: 40px;
+    box-shadow: none;
     border-radius: 2rem;
+    border: var(--text-color-primary) solid 1px;
 }
 
 .game-play-button
 {
     background-color: var(--accent-color-primary);
-    border-color: var(--accent-color-primary);
+    color: var(--background-color-primary);
 }
 
 .game-more-button
 {
-    background-color: var(--background-color-secondary);
-    border-color: var(--background-color-secondary);
+    background-color: var(--background-color-primary);
 }
