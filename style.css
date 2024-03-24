@@ -2,11 +2,12 @@
 
 :root
 {
-    --background-color-primary: #222323;
-    --background-color-secondary: #222323;
-    --text-color-primary: #f0f6f0;
-    --accent-color-primary: #f0f6f0;
-    --accent-color-secondary: #f0f6f0;
+    --background-color-primary: #222323FF;
+    --background-color-primary-alphazero: #22232300;
+    --background-color-secondary: #222323FF;
+    --text-color-primary: #f0f6f0FF;
+    --accent-color-primary: #f0f6f0FF;
+    --accent-color-secondary: #f0f6f0FF;
     --side-margin: 10rem;
 
     font-family: Inter, sans-serif;
@@ -65,6 +66,15 @@ button
     align-items: center;
     padding-top: 2rem;
     padding-right: 4rem;
+
+    animation: show-header-background linear forwards;
+    animation-timeline: scroll();
+}
+
+@keyframes show-header-background
+{
+    0%, 10% { background-color: var(--background-color-primary-alphazero); }
+    15%, 100% { background-color: var(--background-color-primary); }
 }
 
 /* .line
@@ -78,12 +88,20 @@ button
 
 .home-link-container
 {
-    display: flex;
-    align-items: center;
-    margin-left: var(--side-margin);
-    margin-right: 30rem;
+    position: fixed;
+    left: 0;
+    margin-left: 25.1rem;
+
+    opacity: 0;
+    animation: show-home-link linear forwards;
+    animation-timeline: scroll();
 }
 
+@keyframes show-home-link
+{
+    0%, 10% { opacity: 0; }
+    15%, 100% { opacity: 1; }
+}
 
 .nav-links-container
 {
