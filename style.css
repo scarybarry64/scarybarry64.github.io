@@ -60,10 +60,10 @@ button
     justify-content: center;
     align-items: center;
     column-gap: 4rem;
-    margin-bottom: 10rem;
     padding-bottom: 1rem;
     margin-left: 24rem;
     margin-right: 24rem;
+    margin-bottom: 14rem;
     border-bottom: 1px solid #22232361;
 }
 
@@ -201,8 +201,9 @@ button
     justify-items: center; */
     /* display: grid;
     grid-template-columns: 30rem 30rem; */
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
     row-gap: 10rem;
     margin-left: 16rem;
     margin-right: 16rem;
@@ -210,10 +211,10 @@ button
 
 .game
 {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 4rem;
+    column-gap: 4rem; */
 }
 
 .game-thumbnail-container
@@ -224,8 +225,8 @@ button
 
 .game-thumbnail
 {
-    width: 512px;
-    height: 384px;
+    width: 28rem;
+    height: 21rem;
 }
 
 .game-info
