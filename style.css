@@ -193,9 +193,32 @@ button
     width: 12rem;
 }
 
-/* Main */
+/* Nav Sidebar */
 
-.main
+.nav-sidebar
+{
+    background-color: var(--text-color-primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 8rem;
+
+    transform: translate(-100%);
+
+    animation: fly-in linear forwards;
+    animation-timeline: scroll();
+}
+
+@keyframes fly-in
+{
+    0%, 15% { transform: translate(-100%); }
+    25%, 100% { transform: translate(0%); }
+}
+
+/* Portfolio */
+
+.portfolio
 {
     /* display: block;
     justify-items: center; */
