@@ -2,12 +2,21 @@
 
 :root
 {
-    --background-color-primary: #f0f6f0FF;
+    --color-1: #E1D8D4FF;
+    --color-2: #12121BFF;
+    --color-3: #878C9DFF;
+    --color-4: #45568DFF;
+
+    /* --color-1: #f0f6f0FF;
+    --color-2: #222323FF;
+    --color-3: #222323FF;
+    --color-4: #f0f6f0FF; */
+
+
     --background-color-primary-alphazero: #22232300;
-    --background-color-secondary: #f0f6f0FF;
-    --text-color-primary: #222323FF;
-    --accent-color-primary: #222323FF;
     --accent-color-secondary: #222323FF;
+
+
     --side-margin: 10rem;
 
     font-family: Inter, sans-serif;
@@ -22,7 +31,7 @@
 
 *
 {
-    color: var(--text-color-primary);
+    color: var(--color-2);
     text-decoration: none;
     margin: 0;
     padding: 0;
@@ -30,7 +39,7 @@
 
 body
 {
-    background-color: var(--background-color-primary);
+    background-color: var(--color-1);
 }
 
 p
@@ -89,7 +98,7 @@ button
 @keyframes show-header-background-on-scroll
 {
     0%, 15% { background-color: var(--background-color-primary-alphazero); }
-    18%, 100% { background-color: var(--background-color-primary); }
+    18%, 100% { background-color: var(--color-1); }
 }
 
 .home-link-container
@@ -121,14 +130,14 @@ button
 {
     font-size: 1.2rem;
     font-weight: 200;
-    text-decoration: underline 1px var(--background-color-primary);
+    text-decoration: underline 1px var(--color-1);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
 }
 
 .nav-link:hover
 {
-    text-decoration-color: var(--text-color-primary);
+    text-decoration-color: var(--color-2);
 }
 
 .social-media-buttons-container
@@ -197,7 +206,7 @@ button
 
 .nav-sidebar
 {
-    background-color: var(--text-color-primary);
+    background-color: var(--color-2);
     position: fixed;
     top: 0;
     left: 0;
@@ -276,7 +285,7 @@ button
     font-size: 1.5rem;
     margin-left: 2rem;
     padding-left: 2rem;
-    border-left: 1px solid var(--text-color-primary);
+    border-left: 1px solid var(--color-2);
 }
 
 .game-summary
@@ -308,16 +317,16 @@ button
     margin-top: 40px;
     box-shadow: none;
     border-radius: 2rem;
-    border: var(--text-color-primary) solid 1px;
+    border: var(--color-2) solid 1px;
 }
 
 .game-play-button
 {
-    background-color: var(--accent-color-primary);
-    color: var(--background-color-primary);
+    background-color: var(--color-3);
+    color: var(--color-1);
 }
 
 .game-more-button
 {
-    background-color: var(--background-color-primary);
+    background-color: var(--color-1);
 }
