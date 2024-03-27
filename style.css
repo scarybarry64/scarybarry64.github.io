@@ -2,9 +2,9 @@
 
 :root
 {
-    --color-1: #E1D8D4FF;
-    --color-2: #12121BFF;
-    --color-3: #878C9DFF;
+    --color-1: white;
+    --color-2: black;
+    --color-3: gray;
     --color-4: #45568DFF;
 
     /* --color-1: #f0f6f0FF;
@@ -121,15 +121,15 @@ button
 .nav-links-container
 {
     display: flex;
-    flex-direction: row;
-    column-gap: 1.4rem;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
 .nav-link
 {
     font-size: 1.2rem;
     font-weight: 200;
+    color: var(--color-3);
     text-decoration: underline 1px var(--color-1);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
@@ -143,8 +143,10 @@ button
 .social-media-buttons-container
 {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    column-gap: 1rem;
+    justify-content: center;
+    row-gap: 2rem;
 }
 
 .social-media-button
@@ -167,11 +169,11 @@ button
 .title
 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     column-gap: 3rem;
-    margin-left: -4rem;
     margin-bottom: 5rem;
-    margin-top: 6rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
 }
 
 .name-container
@@ -182,8 +184,10 @@ button
 
 .name
 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500;
+    display: flex;
+    justify-content: start;
 }
 
 .career-role
@@ -194,35 +198,43 @@ button
     margin-left: 0.3rem;
     margin-bottom: 4rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    color: var(--color-3);
 }
 
 .portrait
 {
     width: 12rem;
+    z-index: 10;
+    position: relative;
 }
+
+/* .line
+{
+    display: flex;
+    justify-content: start;
+    border-bottom: solid 1px;
+    border-color: rgba(133, 133, 133, 0.625);
+    width: 60rem;
+} */
+
 
 /* Nav Sidebar */
 
-.nav-sidebar
+.sidebar
 {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     width: 8rem;
-
-    transform: translate(-100%);
-
-    animation: fly-in linear forwards;
-    animation-timeline: scroll();
-}
-
-@keyframes fly-in
-{
-    0%, 15% { transform: translate(-100%); }
-    25%, 100% { transform: translate(0%); }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    row-gap: 4rem;
+    padding-bottom: 4rem;
 }
 
 /* Portfolio */
@@ -322,7 +334,7 @@ button
 
 .game-play-button
 {
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     color: var(--color-1);
 }
 
