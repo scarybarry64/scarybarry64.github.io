@@ -117,24 +117,14 @@ button
 .nav-links-container
 {
     display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-    align-items: start;
-    margin-left: 2.2rem;
-    padding-left: 0.5rem;
-    border-left: solid 1px;
-    border-color: rgba(131, 131, 131, 0.675);
+    column-gap: 2rem;
 }
 
 .nav-link
 {
-    font-size: 1.1rem;
-    font-weight: 200;
-    color: var(--color-3);
     text-decoration: underline 1px var(--color-1);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
-    font-family: Rokkitt, sans-serif;
 }
 
 .nav-link:hover
@@ -171,38 +161,50 @@ button
 .title
 {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20rem;
     column-gap: 3rem;
-    margin-bottom: 5rem;
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-bottom: 8rem;
 }
 
 .name-container
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px;
+    border-color: rgba(100, 100, 100, 0.534);
+    width: 60rem;
 }
+
+
+.name, .career-role, .nav-link
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+
+
+
 
 .name
 {
-    font-size: 3.5rem;
-    font-weight: 500;
     display: flex;
     justify-content: start;
+    margin-right: 2rem;
+    color: var(--color-4);
+    font-weight: bold;
 }
 
 .career-role
 {
-    font-size: 1.5rem;
-    font-weight: 100;
-    margin-top: 1rem;
-    margin-left: 0.3rem;
-    margin-bottom: 4rem;
     display: flex;
     justify-content: start;
-    color: var(--color-2);
-    font-family: Rokkitt, sans-serif;
 }
 
 .portrait
