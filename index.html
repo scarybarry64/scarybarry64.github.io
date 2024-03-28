@@ -7,11 +7,14 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="title">
             <div class="portrait-container">
-                <img class="portrait" src="media/portrait4.png">
+                <img class="portrait" src="media/portraits/portrait4.png">
             </div>
             <div class="name-container">
                 <p class="name">BARRY DAY</p>
@@ -21,9 +24,9 @@
         </header>
         <nav class="sidebar">
             <nav class="nav-links-container">
-                <a class="nav-link" href="index.html">GAMES</a>
-                <a class="nav-link" href="media/resume.pdf">RESUME</a>
-                <a class="nav-link" href="index.html">ABOUT</a>
+                <a class="nav-link" href="index.html">games</a>
+                <a class="nav-link" href="media/resume.pdf" target="_blank">resume</a>
+                <a class="nav-link" href="index.html">about</a>
             </nav>
             <nav class="social-media-buttons-container">
                 <button class="social-media-button" onclick="window.open('mailto:brday7@gmail.com')">
@@ -62,12 +65,12 @@
                         Built in Unity with a custom physics engine, retro spritework, and original SFX/music. 
                         Originally made for my senior capstone, further expanded on.
                     </p>
-                    <div class="skills-used">
-                        <p>Unity</p>
-                        <P>C#</P>
-                        <p>2D Spritework</p>
-                        <P>Sound Design</P>
-                        <P>Music</P>
+                    <div class="game-skills-used-container">
+                        <div class="game-skill-used">Unity</div>
+                        <div class="game-skill-used">C#</div>
+                        <div class="game-skill-used">2D Spritework</div>
+                        <div class="game-skill-used">Sound Design</div>
+                        <div class="game-skill-used">Music</div>
                     </div>
                     <div class="game-buttons-container">
                         <button class="game-play-button" onclick="window.open('media/games/last-lunar-air/index.html')">
@@ -76,6 +79,43 @@
                         <button class="game-more-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
                             MORE
                         </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game">
+                <div class="game-thumbnail-container">
+                    <img class="game-thumbnail" src="media/thumbnails/intergalacticburgerwar-thumbnail.png">
+                </div>
+                <div class="game-info">
+                    <div class="game-title-container">
+                        <p class="game-title">
+                            Intergalactic Burger War
+                        </p>
+                        <p class="game-date">
+                            2019
+                        </p>
+                    </div>
+                    <p class="game-summary">
+                        "Great Chefs of the Stars, join the Intergalactic Burger War! Wield quantum contraptions,
+                        unleash the grossest grub. Build the best damn burger in the Cosmos!"
+                    </p>
+                    <p class="game-summary">
+                        A table-top card game where players compete to build burgers, inspired by 1950s sci-fi.
+                        Made solo, improved upon through peers and playtesting.
+                    </p>
+                    <div class="game-skills-used-container">
+                        <div class="game-skill-used">Systems Design</div>
+                        <div class="game-skill-used">Graphic Design</div>
+                        <div class="game-skill-used">Playtesting</div>
+                        <div class="game-skill-used">Writing</div>
+                    </div>
+                    <div class="game-buttons-container">
+                        <a href="intergalactic-burger-war-more.html" target="_self">
+                            <button class="game-more-button">
+                                MORE
+                            </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -146,104 +186,6 @@
                     </div>
                 </div>
             </section>
-
-            <section class="game">
-                <div class="game-thumbnail-container">
-                    <img class="game-thumbnail" src="media/thumbnails/intergalacticburgerwar-thumbnail.png">
-                </div>
-                <div class="game-info">
-                    <div class="game-title-container">
-                        <p class="game-title">
-                            Intergalactic Burger War
-                        </p>
-                        <p class="game-date">
-                            2019
-                        </p>
-                    </div>
-                    <p class="game-summary">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium aut? Ipsum reiciendis, 
-                        eligendi earum facere sint veritatis corporis quaerat facilis, ab temporibus sapiente sequi exercitationem 
-                        quam delectus nostrum sunt?
-                    </p>
-                    <div class="skills-used">
-                        <p>Game Design</p>
-                        <p>Graphic Design</p>
-                        <P>UI/UX</P>
-                        <p>Writing</p>
-                    </div>
-                    <div class="game-buttons-container">
-                        <button class="game-more-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
-                            MORE
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- <div class="game">
-                <div class="game-thumbnail-container">
-                    <img class="game-thumbnail" src="media/thumbnails/horror-thumbnail.png">
-                </div>
-                <div class="game-info-container">
-                    <p class="game-title">N64 Horror Game</p>
-                    <p class="game-date">2023 - Present</p>
-                    <p class="game-summary">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium aut? Ipsum reiciendis, 
-                        eligendi earum facere sint veritatis corporis quaerat facilis, ab temporibus sapiente sequi exercitationem 
-                        quam delectus nostrum sunt?
-                    </p>
-                </div>
-            </div>
-
-            <div class="game">
-                <div class="game-thumbnail-container">
-                    <img class="game-thumbnail" src="media/thumbnails/sallysaysdie-thumbnail.png">
-                </div>
-                <div class="game-info-container">
-                    <p class="game-title">Sally Says Die</p>
-                    <p class="game-date">2024</p>
-                    <p class="game-summary">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium aut? Ipsum reiciendis, 
-                        eligendi earum facere sint veritatis corporis quaerat facilis, ab temporibus sapiente sequi exercitationem 
-                        quam delectus nostrum sunt?
-                    </p>
-                </div>
-            </div>
-
-            <div class="game">
-                <div class="game-thumbnail-container">
-                    <img class="game-thumbnail" src="media/thumbnails/lastlunarair-thumbnail.png">
-                </div>
-                <div class="game-info-container">
-                    <p class="game-title">
-                        Cybersplice
-                    </p>
-                    <p class="game-date">
-                        2020
-                    </p>
-                    <p class="game-summary">
-                        A Matrix-inspired endless runner, made as the final project for a college class. Created by Barry Day, Trevor, and Lucio.
-                    </p>
-                    <button class="game-play-button" onclick="window.open('https://scarybarry.itch.io/cybersplice')">
-                        Play
-                    </button>
-                </div>
-            </div>
-
-            <div class="game">
-                <div class="game-thumbnail-container">
-                    <img class="game-thumbnail" src="media/thumbnails/intergalacticburgerwar-thumbnail.png">
-                </div>
-                <div class="game-info-container">
-                    <p class="game-title">Intergalactic Burger War</p>
-                    <p class="game-date">2019</p>
-                    <p class="game-summary">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium aut? Ipsum reiciendis, 
-                        eligendi earum facere sint veritatis corporis quaerat facilis, ab temporibus sapiente sequi exercitationem 
-                        quam delectus nostrum sunt?
-                    </p>
-                </div>
-            </div> -->
 
 
         </main>

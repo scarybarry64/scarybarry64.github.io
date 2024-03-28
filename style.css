@@ -24,10 +24,10 @@
     font-size: 1rem;
 }
 
-@supports (font-variation-settings: normal) 
+/* @supports (font-variation-settings: normal) 
 {
     :root { font-family: InterVariable, sans-serif; }
-}
+} */
 
 *
 {
@@ -40,11 +40,7 @@
 body
 {
     background-color: var(--color-1);
-}
-
-p
-{
-    font-weight:200;
+    font-weight: 200;
 }
 
 footer p
@@ -122,17 +118,23 @@ button
 {
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
+    row-gap: 1rem;
+    align-items: start;
+    margin-left: 2.2rem;
+    padding-left: 0.5rem;
+    border-left: solid 1px;
+    border-color: rgba(131, 131, 131, 0.675);
 }
 
 .nav-link
 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 200;
     color: var(--color-3);
     text-decoration: underline 1px var(--color-1);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
+    font-family: Rokkitt, sans-serif;
 }
 
 .nav-link:hover
@@ -146,7 +148,7 @@ button
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 2rem;
+    row-gap: 1rem;
 }
 
 .social-media-button
@@ -199,7 +201,8 @@ button
     margin-bottom: 4rem;
     display: flex;
     justify-content: start;
-    color: var(--color-3);
+    color: var(--color-2);
+    font-family: Rokkitt, sans-serif;
 }
 
 .portrait
@@ -234,7 +237,7 @@ button
     align-items: center;
     justify-content: end;
     row-gap: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 /* Portfolio */
@@ -305,11 +308,16 @@ button
     line-height: 2rem;/
 }
 
-.skills-used
+.game-skills-used-container
 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    color: var(--color-3);
+    font-weight: bold;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
 }
 
 .game-buttons-container
