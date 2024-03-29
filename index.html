@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="title">
+        <header class="header">
             <!-- <div class="portrait-container">
                 <img class="portrait" src="media/portraits/portrait4.png">
             </div> -->
@@ -20,44 +20,46 @@
                 <p class="name">BARRY DAY</p>
                 <p class="career-role">Game Programmer|Designer</p>
             </div>
-            <nav class="nav-links-container">
-                <a class="nav-link" href="index.html">home</a>
-                <a class="nav-link" href="index.html">portfolio</a>
-                <a class="nav-link" href="media/resume.pdf" target="_blank">resume</a>
-                <a class="nav-link" href="index.html">about</a>
+            <nav class="nav-bar">
+                <div class="nav-links-container">
+                    <a class="nav-link-current" href="index.html">home</a>
+                    <a class="nav-link" href="index.html">portfolio</a>
+                    <a class="nav-link" href="media/resume.pdf" target="_blank">resume</a>
+                    <a class="nav-link" href="index.html">about</a>
+                </div>
+                <div class="social-media-buttons-container">
+                    <button class="social-media-button" onclick="window.open('mailto:brday7@gmail.com')">
+                        <img class="email-icon" src="email-test.png">
+                    </button>
+                    <button class="social-media-button" onclick="window.open('https://www.linkedin.com/in/barry-day-18931898/')">
+                        <img class="linkedin-icon" src="linkedin-test.png">
+                    </button>
+                    <button class="social-media-button" onclick="window.open('https://github.com/scarybarry64')">
+                        <img class="github-icon" src="github-test.png">
+                    </button>
+                    <button class="social-media-button" onclick="window.open('https://scarybarry.itch.io/')">
+                        <img class="itchio-icon" src="itchio-test.png">
+                    </button>
+                </div>
             </nav>
         </header>
-        <nav class="sidebar">
-            <nav class="social-media-buttons-container">
-                <button class="social-media-button" onclick="window.open('mailto:brday7@gmail.com')">
-                    <img class="email-icon" src="media/icons/email-icon.jpg">
-                </button>
-                <button class="social-media-button" onclick="window.open('https://www.linkedin.com/in/barry-day-18931898/')">
-                    <img class="linkedin-icon" src="media/icons/linkedin-icon.jpg">
-                </button>
-                <button class="social-media-button" onclick="window.open('https://github.com/scarybarry64')">
-                    <img class="github-icon" src="media/icons/github-icon.png">
-                </button>
-                <button class="social-media-button" onclick="window.open('https://scarybarry.itch.io/')">
-                    <img class="itchio-icon" src="media/icons/itchio-icon.png">
-                </button>
-            </nav>
-        </nav>
+        <!-- <nav class="sidebar">
+        </nav> -->
         <main class="portfolio">
                 
             <section class="game">
+                <header class="game-header">
+                    <p class="game-title">
+                        Last Lunar Air
+                    </p>
+                    <p class="game-date">
+                        2024
+                    </p>
+                </header>
                 <div class="game-thumbnail-container">
                     <img class="game-thumbnail" src="media/thumbnails/lastlunarair-thumbnail.png">
                 </div>
                 <div class="game-info">
-                    <div class="game-title-container">
-                        <p class="game-title">
-                            Last Lunar Air
-                        </p>
-                        <p class="game-date">
-                            2021 - 2024
-                        </p>
-                    </div>
                     <p class="game-summary">
                         A Gameboy-inspired side-scroller about skateboarding on the Moon, developed entirely solo. Your oxygen's running low, so do tricks and get air to get air.
                     </p>
@@ -84,22 +86,22 @@
             </section>
 
             <section class="game">
+                <header class="game-header">
+                    <p class="game-title">
+                        Intergalactic Burger War
+                    </p>
+                    <p class="game-date">
+                        2019
+                    </p>
+                </header>
                 <div class="game-thumbnail-container">
                     <img class="game-thumbnail" src="media/thumbnails/intergalacticburgerwar-thumbnail.png">
                 </div>
                 <div class="game-info">
-                    <div class="game-title-container">
-                        <p class="game-title">
-                            Intergalactic Burger War
-                        </p>
-                        <p class="game-date">
-                            2019
-                        </p>
-                    </div>
-                    <p class="game-summary">
+                    <!-- <p class="game-summary">
                         "Great Chefs of the Stars, join the Intergalactic Burger War! Wield quantum contraptions,
                         unleash the grossest grub. Build the best damn burger in the Cosmos!"
-                    </p>
+                    </p> -->
                     <p class="game-summary">
                         A table-top card game where players compete to build burgers, inspired by 1950s sci-fi.
                         Made solo, improved upon through peers and playtesting.
