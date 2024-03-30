@@ -75,6 +75,8 @@ button
     font-size: 1.15rem;
     font-weight: 100;
     text-transform: uppercase;
+
+    user-select: none;
 }
 
 .name-container
@@ -132,11 +134,16 @@ button
 }
 
 
-.nav-link
+.nav-link, .nav-link-dropdown
 {
     text-decoration: underline 1px var(--color-1);
     text-underline-offset: 0.5rem;
     transition: text-decoration-color 300ms;
+}
+
+.nav-link
+{
+    text-wrap: nowrap;
 }
 
 .nav-link:hover
@@ -161,33 +168,42 @@ button
     width: 1.5rem;
 }
 
-
-/* Nav Sidebar */
-
-.sidebar
+.nav-link-dropdown
 {
-    background-color: var(--color-1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: end;
-    row-gap: 4rem;
-    padding-bottom: 3rem;
+    position: relative;
+    cursor: pointer;
+    /* font-family: 'Courier New', Courier, monospace;
+    font-size: 1.15rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    background: none; */
 }
+
+.nav-link-dropdown-content.open
+{
+    /* margin-top: 10rem; */
+    display: block;
+}
+
+
+.nav-link-dropdown-content
+{
+    position: absolute;
+    display: none;
+    top: 2rem;
+}
+
+/* .nav-link-dropdown:focus .nav-link-dropdown-content
+{
+    display: block;
+    text-decoration-color: var(--color-2);
+} */
+
 
 /* Portfolio */
 
 .portfolio
 {
-    /* display: block;
-    justify-items: center; */
-    /* display: grid;
-    grid-template-columns: 30rem 30rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 8rem;

@@ -23,9 +23,15 @@
             <nav class="nav-bar">
                 <div class="nav-links-container">
                     <a class="nav-link-current" href="index.html">home</a>
-                    <a class="nav-link" href="index.html">portfolio</a>
+                    <div class="nav-link-dropdown" onclick="toggleDropdown()">portfolio
+                        <div class="nav-link-dropdown-content">
+                            <a class="nav-link" href="">Last Lunar Air</a>
+                            <a class="nav-link" href="">Intergalactic Burger War</a>
+                            <a class="nav-link" href="">Sally Says Die</a>
+                        </div>
+                    </div>
                     <a class="nav-link" href="media/resume.pdf" target="_blank">resume</a>
-                    <a class="nav-link" href="index.html">about</a>
+                    <a class="nav-link" href="about.html">about</a>
                 </div>
                 <div class="social-media-buttons-container">
                     <button class="social-media-button" onclick="window.open('mailto:brday7@gmail.com')">
@@ -43,8 +49,6 @@
                 </div>
             </nav>
         </header>
-        <!-- <nav class="sidebar">
-        </nav> -->
         <main class="portfolio">
                 
             <section class="game">
@@ -194,5 +198,6 @@
         <footer>
             <p>&#169; 2024 Barry Day</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
