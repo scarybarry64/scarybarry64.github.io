@@ -1,20 +1,47 @@
-// Handles dropdown menu for clicking portfolio link
+// Portfolio Dropdown
+// container is the outer-most element, holds dropdown
+// dropdown holds the portfolio links and is the thing that will be shown/hidden
 
-const dropdown = document.querySelector(".nav-link-dropdown-content");
-document.addEventListener("click", test);
-state = false;
+const container = document.querySelector(".portfolio-link-container");
+const dropdown = document.querySelector(".portfolio-link-dropdown");
+isOpen = false;
 
-function toggleDropdown()
+function togglePortfolioDropdown()
 {
-    dropdown.classList.toggle("open");
-    state = !state;
-}
-
-
-function test(event)
-{
-    if (!event.target.closest(".nav-link-dropdown") && state)
+    if (!isOpen)
     {
-        toggleDropdown();
+        openPortfolioDropdown();
+    }
+    else
+    {
+        closePortfolioDropdown();
     }
 }
+
+function openPortfolioDropdown()
+{
+    dropdown.classList.add('portfolio-dropdown-open');
+    document.addEventListener("click", closePortfolioDropdownOnOutsideClick);
+    isOpen = true;
+}
+
+function closePortfolioDropdown()
+{
+    dropdown.classList.remove('portfolio-dropdown-open');
+    document.removeEventListener("click", closePortfolioDropdownOnOutsideClick);
+    isOpen = false;
+}
+
+function closePortfolioDropdownOnOutsideClick(event)
+{
+    if (event.target != container)
+    {   
+        closePortfolioDropdown();
+    }
+}
+
+
+
+// Page Transition
+
+// make opacity, transform 

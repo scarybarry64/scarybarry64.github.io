@@ -1,4 +1,6 @@
-/* General */
+/*************************************************************************************************/
+/*General*/
+
 
 :root
 {
@@ -7,16 +9,8 @@
     --color-3: gray;
     --color-4: #45568DFF;
 
-    /* --color-1: #f0f6f0FF;
-    --color-2: #222323FF;
-    --color-3: #222323FF;
-    --color-4: #f0f6f0FF; */
-
-
     --background-color-primary-alphazero: #22232300;
     --accent-color-secondary: #222323FF;
-
-
     --side-margin: 10rem;
 
     font-family: Inter, sans-serif;
@@ -43,6 +37,19 @@ body
     font-weight: 200;
 }
 
+@keyframes test
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        opacity: 1;
+    }
+}
+
 footer p
 {
     text-align: center;
@@ -57,6 +64,8 @@ button
     border: none;
 }
 
+
+/*************************************************************************************************/
 /* Header */
 
 
@@ -128,33 +137,48 @@ button
 
 .nav-link-current
 {
-    font-weight: bolder;
+    color: rgb(78, 78, 78);
+    font-weight: bold;
     text-decoration: underline 1px var(--color-2);
     text-underline-offset: 0.5rem;
 }
 
 
-.nav-link, .nav-link-dropdown
-{
-    text-decoration: underline 1px var(--color-1);
-    text-underline-offset: 0.5rem;
-    transition: text-decoration-color 300ms;
-}
-
-.nav-link
+.nav-link, .portfolio-link-container
 {
     text-wrap: nowrap;
+    transition: all 300ms;
 }
 
-.nav-link:hover
+.nav-link:hover, .portfolio-link-container:hover
 {
-    text-decoration-color: var(--color-2);
+    color: rgb(148, 148, 148);
+}
+
+.portfolio-link-container
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-link-dropdown
+{
+    position: absolute;
+    display: none;
+    top: 2rem;
+}
+
+.portfolio-dropdown-open
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .social-media-buttons-container
 {
     display: flex;
-    column-gap: 0.7rem;
+    column-gap: 0.5rem;
 }
 
 .social-media-button
@@ -168,39 +192,9 @@ button
     width: 1.5rem;
 }
 
-.nav-link-dropdown
-{
-    position: relative;
-    cursor: pointer;
-    /* font-family: 'Courier New', Courier, monospace;
-    font-size: 1.15rem;
-    font-weight: 100;
-    text-transform: uppercase;
-    background: none; */
-}
-
-.nav-link-dropdown-content.open
-{
-    /* margin-top: 10rem; */
-    display: block;
-}
-
-
-.nav-link-dropdown-content
-{
-    position: absolute;
-    display: none;
-    top: 2rem;
-}
-
-/* .nav-link-dropdown:focus .nav-link-dropdown-content
-{
-    display: block;
-    text-decoration-color: var(--color-2);
-} */
-
-
+/*************************************************************************************************/
 /* Portfolio */
+
 
 .portfolio
 {
