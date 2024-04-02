@@ -66,11 +66,36 @@ button
 
 
 /*************************************************************************************************/
+/* Page Transition */
+
+.transition-1
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--color-1);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-1.is-active
+{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+/*************************************************************************************************/
 /* Header */
 
 
 .header
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,6 +104,7 @@ button
     column-gap: 3rem;
     margin-top: 2rem;
     margin-bottom: 8rem;
+    z-index: 2;
 
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.15rem;
@@ -193,10 +219,10 @@ button
 }
 
 /*************************************************************************************************/
-/* Portfolio */
+/* Games */
 
 
-.portfolio
+main
 {
     display: grid;
     grid-template-columns: 1fr 1fr;

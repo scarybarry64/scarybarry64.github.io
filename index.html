@@ -12,6 +12,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- <div class="transition transition-1 is-active"></div> -->
         <header class="header">
             <!-- <div class="portrait-container">
                 <img class="portrait" src="media/portraits/portrait4.png">
@@ -23,10 +24,10 @@
             <nav class="nav-bar">
                 <div class="nav-links-container">
                     <a class="nav-link-current" href="index.html">home</a>
-                    <div class="portfolio-link-container" onclick="togglePortfolioDropdown()">portfolio
+                    <div class="portfolio-link-container" onclick="togglePortfolioDropdown()">games
                         <div class="portfolio-link-dropdown">
                             <a class="portfolio-link">Last Lunar Air</a>
-                            <a class="portfolio-link" href="">Intergalactic Burger War</a>
+                            <a class="portfolio-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
                             <a class="portfolio-link" href="">Sally Says Die</a>
                         </div>
                     </div>
@@ -49,8 +50,7 @@
                 </div>
             </nav>
         </header>
-        <main class="portfolio">
-                
+        <main class="games">
             <section class="game">
                 <header class="game-header">
                     <p class="game-title">
@@ -88,7 +88,6 @@
                     </div>
                 </div>
             </section>
-
             <section class="game">
                 <header class="game-header">
                     <p class="game-title">
@@ -125,31 +124,29 @@
                     </div>
                 </div>
             </section>
-
             <section class="game">
+                <header class="game-header">
+                    <p class="game-title">
+                        N64 Horror Game
+                    </p>
+                    <p class="game-date">
+                        2024
+                    </p>
+                </header>
                 <div class="game-thumbnail-container">
                     <img class="game-thumbnail" src="media/thumbnails/horror-thumbnail.png">
                 </div>
                 <div class="game-info">
-                    <div class="game-title-container">
-                        <p class="game-title">
-                            N64 Horror Game
-                        </p>
-                        <p class="game-date">
-                            2024
-                        </p>
-                    </div>
                     <p class="game-summary">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium aut? Ipsum reiciendis, 
                         eligendi earum facere sint veritatis corporis quaerat facilis, ab temporibus sapiente sequi exercitationem 
                         quam delectus nostrum sunt?
                     </p>
-                    <div class="skills-used">
-                        <p>Unreal</p>
-                        <P>C++</P>
-                        <p>AI</p>
-                        <p>UE Blueprints</p>
-                        <p>3D Modeling</p>
+                    <div class="game-skills-used-container">
+                        <div class="game-skill-used">Unreal Engine 5</div>
+                        <div class="game-skill-used">C++</div>
+                        <div class="game-skill-used">AI</div>
+                        <div class="game-skill-used">3D Modeling</div>
                     </div>
                     <div class="game-buttons-container">
                         <button class="game-more-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
@@ -158,29 +155,29 @@
                     </div>
                 </div>
             </section>
-
             <section class="game">
+                <header class="game-header">
+                    <p class="game-title">
+                        Sally Says Die
+                    </p>
+                    <p class="game-date">
+                        2024
+                    </p>
+                </header>
                 <div class="game-thumbnail-container">
                     <img class="game-thumbnail" src="media/thumbnails/sallysaysdie-thumbnail.png">
                 </div>
                 <div class="game-info">
-                    <div class="game-title-container">
-                        <p class="game-title">
-                            Sally Says Die
-                        </p>
-                        <p class="game-date">
-                            2024
-                        </p>
-                    </div>
                     <p class="game-summary">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, praesentium aut? Ipsum reiciendis, 
                         eligendi earum facere sint veritatis corporis quaerat facilis, ab temporibus sapiente sequi exercitationem 
                         quam delectus nostrum sunt?
                     </p>
-                    <div class="skills-used">
-                        <p>Unity</p>
-                        <P>C#</P>
-                        <p>AI</p>
+                    <div class="game-skills-used-container">
+                        <div class="game-skill-used">Unity</div>
+                        <div class="game-skill-used">C#</div>
+                        <div class="game-skill-used">AI</div>
+                    </div>
                     </div>
                     <div class="game-buttons-container">
                         <button class="game-play-button" onclick="window.open('https://scarybarry.itch.io/last-lunar-air')">
@@ -192,8 +189,6 @@
                     </div>
                 </div>
             </section>
-
-
         </main>
         <footer>
             <p>&#169; 2024 Barry Day</p>
