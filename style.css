@@ -9,6 +9,16 @@
     --color-3: gray;
     --color-4: #45568DFF;
 
+    --font-size-big: 1.5rem;
+    --font-size-medium: 1.2rem;
+    --font-size-small: 1rem;
+    --font-size-header: 1.15rem;
+
+    --line-height-paragraph: 1.5rem;
+
+    --side-margin-main: 16rem;
+    --side-margin-header: 20rem;
+
     --background-color-primary-alphazero: #22232300;
     --accent-color-secondary: #222323FF;
     --side-margin: 10rem;
@@ -99,15 +109,15 @@ button
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 20rem;
-    margin-right: 20rem;
+    margin-left: var(--side-margin-header);
+    margin-right: var(--side-margin-header);
     column-gap: 3rem;
     margin-top: 2rem;
     margin-bottom: 8rem;
     z-index: 2;
 
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.15rem;
+    font-size: var(--font-size-header);
     font-weight: 100;
     text-transform: uppercase;
 
@@ -219,17 +229,17 @@ button
 }
 
 /*************************************************************************************************/
-/* Games */
+/* Games (Home) */
 
 
-main
+.games
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 8rem;
     column-gap: 2rem;
-    margin-left: 16rem;
-    margin-right: 16rem;
+    margin-left: var(--side-margin-main);
+    margin-right: var(--side-margin-main);
 }
 
 .game
@@ -248,14 +258,14 @@ main
 
 .game-title
 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-big);
     font-weight: bold;
     color: var(--color-4);
 }
 
 .game-date
 {
-    font-size: 1.2rem;
+    font-size: var(--font-size-medium);
     margin-left: 0.5rem;
     padding-left: 0.5rem;
     border-left: 1px solid;
@@ -285,7 +295,7 @@ main
 
 .game-summary
 {
-    line-height: 2rem;/
+    line-height: var(--line-height-paragraph);
 }
 
 .game-skills-used-container
@@ -310,7 +320,7 @@ main
 
 .game-play-button, .game-more-button
 {
-    font-size: 1rem;
+    font-size: var(--font-size-small);
     width: 6rem;
     height: 2rem;
     font-weight: 500;
@@ -329,4 +339,64 @@ main
 .game-more-button
 {
     background-color: var(--color-1);
+}
+
+
+/*************************************************************************************************/
+/* Games (Individual) */
+
+.game-page
+{
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: var(--side-margin-main);
+    margin-right: var(--side-margin-main);
+}
+
+.game-page-overview
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    margin-bottom: 4rem;
+    padding-right: 4rem;
+}
+
+.game-page-responsibilities
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    padding-left: 4rem;
+    margin-bottom: 16rem;
+}
+
+.game-page-screenshots
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-page-content-title
+{
+    font-size: var(--font-size-big);
+    color: var(--color-4);
+    font-weight: 400;
+}
+
+#IBW-logo
+{
+    width: 24rem;
+    float: right;
+}
+
+#IBW-cards
+{
+    width: 30rem;
+    float: left;
+}
+
+#IBW-rules-1, #IBW-rules-2
+{
+    width: 32rem;
 }
