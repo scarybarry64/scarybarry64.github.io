@@ -441,6 +441,20 @@ button
     font-weight: 400;
 }
 
+.game-page-paragraph a
+{
+    color: var(--color-4);
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.game-page-pic-second
+{
+    float: left;
+    width: 30rem;
+}
+
+
 /* Horror Game */
 
 #horror-game-gif
@@ -479,4 +493,19 @@ button
 #IBW-rules-1, #IBW-rules-2
 {
     width: 32rem;
+}
+
+/* Sally Says Die! */
+
+#sally-says-die-screenshots
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sally-says-die-pic
+{
+    width: 100%;
 }
