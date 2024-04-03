@@ -9,6 +9,7 @@
     --color-3: gray;
     --color-4: #45568DFF;
 
+    --font-size-biggest: 1.75rem;
     --font-size-big: 1.5rem;
     --font-size-medium: 1.2rem;
     --font-size-small: 1rem;
@@ -222,13 +223,13 @@ button
     column-gap: 0.5rem;
 }
 
-.social-media-button
+.social-media-buttons-container button
 {
     border: none;
     background: transparent;
 }
 
-.email-icon, .linkedin-icon, .github-icon, .itchio-icon
+.social-media-buttons-container img
 {
     width: 1.5rem;
 }
@@ -352,8 +353,6 @@ button
 
 .game-page
 {
-    /* display: flex;
-    flex-direction: column; */
     margin-left: 14rem;
     margin-right: 14rem;
     line-height: 1.5rem;
@@ -368,6 +367,22 @@ button
 .game-page b
 {
     font-weight: 500;
+}
+
+.game-page-title
+{
+    display: flex;
+    justify-content: start;
+    font-size: var(--font-size-biggest);
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.game-page-video
+{
+    aspect-ratio: 16 / 9;
+    width: 560px;
+    float: right;
 }
 
 .game-page-overview
@@ -406,6 +421,13 @@ button
     justify-content: space-between;
 }
 
+.game-page-content-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
 .game-page-content-title
 {
     font-size: var(--font-size-big);
@@ -418,6 +440,29 @@ button
     font-size: 1.2rem;
     font-weight: 400;
 }
+
+/* Horror Game */
+
+#horror-game-gif
+{
+    float: left;
+    width: 34rem;
+}
+
+#horror-game-screenshots
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.horror-game-pic
+{
+    width: 100%;
+}
+
+/* Intergalactic Burger War */
 
 #IBW-logo
 {

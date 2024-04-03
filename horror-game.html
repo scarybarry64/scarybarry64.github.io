@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+        <title>Horror Game | Details</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="name-container">
+                <p class="name">BARRY DAY</p>
+                <p class="career-role">Game Programmer|Designer</p>
+            </div>
+            <nav class="nav-bar">
+                <div class="nav-links-container">
+                    <a class="nav-link" href="index.html">home</a>
+                    <div class="portfolio-link-container nav-link-current" onclick="togglePortfolioDropdown()">games
+                        <div class="portfolio-link-dropdown">
+                            <a class="portfolio-link">Last Lunar Air</a>
+                            <a class="portfolio-link" href="horror-game.html">Horror Game</a>
+                            <a class="portfolio-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
+                            <a class="portfolio-link" href="">Sally Says Die</a>
+                        </div>
+                    </div>
+                    <a class="nav-link" href="media/resume.pdf" target="_blank">resume</a>
+                    <a class="nav-link" href="about.html">about</a>
+                </div>
+                <div class="social-media-buttons-container">
+                    <button onclick="window.open('mailto:brday7@gmail.com')">
+                        <img src="media/icons/email-icon.png">
+                    </button>
+                    <button onclick="window.open('https://www.linkedin.com/in/barry-day-18931898/')">
+                        <img src="media/icons/linkedin-icon.png">
+                    </button>
+                    <button onclick="window.open('https://github.com/scarybarry64')">
+                        <img src="media/icons/github-icon.png">
+                    </button>
+                    <button onclick="window.open('https://scarybarry.itch.io/')">
+                        <img src="media/icons/itchio-icon.png">
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main class="game-page">
+            <div class="game-page-title">N64 Horror Game</div>
+            <iframe class="game-page-video" src="https://www.youtube.com/embed/f_U6SOQwq2U?si=9F7Ei_SRGWoXEqNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <section class="game-page-overview">
+                <div class="game-page-content-title">Overview</div>
+                <p class="game-page-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolorum dicta quos dolorem quaerat aspernatur unde. Perspiciatis sed, molestiae praesentium ab porro labore repellat. Praesentium delectus mollitia possimus fuga dolor?
+                </p>
+                <p class="game-page-paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni provident, obcaecati ducimus a exercitationem ex quisquam unde consequatur voluptatibus molestias impedit? Laudantium laborum hic ipsum, mollitia iure maxime nisi id.
+                </p>
+                <div class="game-page-stats">
+                    <p><b>Genre: </b>First-Person Survival Horror</p>
+                    <p><b>Team Size: </b>2</p>
+                    <p><b>Tools Used: </b>UE5, C++, Blender</p>
+                    <p><b>Status: </b> In Development</p>
+                </div>
+            </section>
+            <img id="horror-game-gif" src="media/horror-game/horror-gif.gif">
+            <section class="game-page-responsibilities">
+                <div class="game-page-content-title">Responsibilities and Achievements</div>
+                <div class="game-page-content-container">
+                    <div class="game-page-content-title-small">Programming and AI</div>
+                    <ul class="game-page-responsibilities-list">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                    </ul>
+                </div>
+                <div class="game-page-content-container">
+                    <div class="game-page-content-title-small">Level Design</div>
+                    <ul class="game-page-responsibilities-list">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                    </ul>
+                </div>
+                <div class="game-page-content-container">
+                    <div class="game-page-content-title-small">3D Modeling</div>
+                    <ul class="game-page-responsibilities-list">
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="horror-game-screenshots">
+                <img class="horror-game-pic" src="media/horror-game/horror-pic-1.png">
+                <img class="horror-game-pic" src="media/horror-game/horror-pic-2.png">
+                <img class="horror-game-pic" src="media/horror-game/horror-pic-3.png">
+                <img class="horror-game-pic" src="media/horror-game/horror-pic-4.png">
+                <img class="horror-game-pic" src="media/horror-game/horror-pic-5.png">
+                <img class="horror-game-pic" src="media/horror-game/horror-pic-6.png">
+            </section>
+        </main>
+        <footer>
+            <p>&#169; 2024 Barry Day</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
