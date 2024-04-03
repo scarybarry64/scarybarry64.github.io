@@ -64,8 +64,8 @@ footer p
 {
     text-align: center;
     letter-spacing: 1px;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
 }
 
 button
@@ -211,6 +211,11 @@ button
     flex-wrap: nowrap;
 }
 
+.portfolio-link
+{
+    font-weight: 100;
+}
+
 .social-media-buttons-container
 {
     display: flex;
@@ -343,14 +348,26 @@ button
 
 
 /*************************************************************************************************/
-/* Games (Individual) */
+/* Game Page */
 
 .game-page
 {
     /* display: flex;
     flex-direction: column; */
-    margin-left: var(--side-margin-main);
-    margin-right: var(--side-margin-main);
+    margin-left: 14rem;
+    margin-right: 14rem;
+    line-height: 1.5rem;
+}
+
+.game-page em
+{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.game-page b
+{
+    font-weight: 500;
 }
 
 .game-page-overview
@@ -362,14 +379,26 @@ button
     padding-right: 4rem;
 }
 
+.game-page-stats
+{
+    margin-top: 1rem;
+}
+
 .game-page-responsibilities
 {
     display: flex;
     flex-direction: column;
     row-gap: 1.4rem;
     padding-left: 4rem;
-    margin-bottom: 16rem;
+    margin-bottom: 6rem;
 }
+
+.game-page-responsibilities-list
+{
+    padding-left: 1.2rem;
+    list-style-type: square;
+}
+
 
 .game-page-screenshots
 {
@@ -381,6 +410,12 @@ button
 {
     font-size: var(--font-size-big);
     color: var(--color-4);
+    font-weight: 400;
+}
+
+.game-page-content-title-small
+{
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
