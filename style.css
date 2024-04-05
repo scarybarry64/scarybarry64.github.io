@@ -304,6 +304,13 @@ button
     line-height: var(--line-height-paragraph);
 }
 
+.game-summary a
+{
+    color: var(--color-4);
+    font-weight: 300;
+    text-decoration: underline;
+}
+
 .game-skills-used-container
 {
     display: flex;
