@@ -439,6 +439,7 @@ button
 {
     font-size: 1.2rem;
     font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .game-page-paragraph a
@@ -474,6 +475,11 @@ button
 .horror-game-pic
 {
     width: 100%;
+}
+
+#horror-game-responsibilities
+{
+    margin-top: -8rem;
 }
 
 /* Intergalactic Burger War */
