@@ -107,9 +107,10 @@ button
 .header
 {
     position: relative;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+
     margin-left: var(--side-margin-header);
     margin-right: var(--side-margin-header);
     column-gap: 3rem;
@@ -123,6 +124,13 @@ button
     text-transform: uppercase;
 
     user-select: none;
+}
+
+.nav-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .name-container
@@ -152,11 +160,15 @@ button
     justify-content: start;
 }
 
+.portrait-container
+{
+    position: absolute;
+    left: -5.6rem;
+}
+
 .portrait
 {
-    width: 12rem;
-    z-index: 10;
-    position: relative;
+    width: 3.8rem;
 }
 
 .nav-bar
