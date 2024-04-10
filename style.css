@@ -47,6 +47,8 @@ body
 {
     background-color: var(--color-1);
     font-weight: 200;
+    /* padding-left: var(--side-margin-main);
+    padding-right: var(--side-margin-main); */
 }
 
 @keyframes test
@@ -107,23 +109,14 @@ button
 
 .header
 {
-    position: relative;
 
-    display: flex;
-
-
-    margin-left: var(--side-margin-header);
-    margin-right: var(--side-margin-header);
-    column-gap: 3rem;
     margin-top: 2rem;
     margin-bottom: 8rem;
-    z-index: 2;
 
     font-family: 'Courier New', Courier, monospace;
     font-size: var(--font-size-header);
     font-weight: 100;
     text-transform: uppercase;
-
     user-select: none;
 }
 
@@ -143,7 +136,7 @@ button
     padding-bottom: 0.5rem;
     border-bottom: solid 1px;
     border-color: var(--color-border);
-    width: 55rem;
+    width: 100%;
 }
 
 .name
@@ -250,20 +243,11 @@ button
 /*************************************************************************************************/
 /* Games (Home) */
 
-
-.games
-{
-    display: grid;
-    grid-template-columns: 100%;
-    row-gap: 4rem;
-    margin-left: var(--side-margin-main);
-    margin-right: var(--side-margin-main);
-}
-
 .game
 {
     display: flex;
     column-gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .game-thumbnail
