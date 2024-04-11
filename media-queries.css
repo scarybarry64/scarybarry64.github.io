@@ -28,7 +28,7 @@
         margin-bottom: 8rem;
     }
 
-    .header-mobile-view
+    .header-mobile
     {
         display: none;
     }
@@ -59,7 +59,7 @@
         display: none;
     }
 
-    .header-mobile-view
+    .header-mobile
     {
         display: flex;
         justify-content: space-between;
@@ -119,5 +119,7 @@
     .career-role-shortened
     {
         display: block;
+        border-top: solid 1px;
+        border-color: var(--color-border);
     }
 }

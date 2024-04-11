@@ -106,7 +106,7 @@ button
 /*************************************************************************************************/
 /* Header */
 
-.header, .header-mobile-view
+.header, .header-mobile
 {
     font-family: 'Courier New', Courier, monospace;
     font-size: var(--font-size-header);
@@ -235,10 +235,32 @@ button
     width: 1.5rem;
 }
 
-.hamburger-menu
+/* Mobile */
+
+.nav-sidebar
 {
-    position: relative;
-    display: inline-block;
+    display: none;
+    position: absolute;
+    top: 6rem;
+    bottom: 0;
+    left: 4rem;
+    right: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+}
+
+.hamburger-button:has(input:checked) + .nav-sidebar
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger-button input
+{
+    appearance: none;
 }
 
 .hamburger-icon
@@ -257,6 +279,45 @@ button
     height: 2px;
     background-color: black;
     transition: all 0.3 ease-in-out;
+}
+
+.nav-links-mobile-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-header);
+    font-weight: 100;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.game-links-mobile-container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    border-bottom: solid 1px;
+    border-color: var(--color-border);
+    padding-bottom: 2rem;
+    row-gap: 1rem;
+}
+
+.social-buttons-mobile-container
+{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.social-buttons-mobile-container img
+{
+    width: 2.5rem;
 }
 
 /*************************************************************************************************/
