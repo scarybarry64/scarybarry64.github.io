@@ -1,0 +1,172 @@
+/*************************************************************************************************/
+/* Game Page */
+
+.game-page
+{
+    margin-left: 14rem;
+    margin-right: 14rem;
+    line-height: 1.5rem;
+}
+
+.game-page em
+{
+    font-style: italic;
+    font-weight: 400;
+}
+
+.game-page b
+{
+    font-weight: 500;
+}
+
+.game-page-title
+{
+    display: flex;
+    justify-content: start;
+    font-size: var(--font-size-biggest);
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+.game-page-video
+{
+    aspect-ratio: 16 / 9;
+    width: 560px;
+    float: right;
+}
+
+.game-page-overview
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    margin-bottom: 4rem;
+    padding-right: 4rem;
+}
+
+.game-page-stats
+{
+    margin-top: 1rem;
+}
+
+.game-page-responsibilities
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    padding-left: 4rem;
+    margin-bottom: 6rem;
+}
+
+.game-page-responsibilities-list
+{
+    padding-left: 1.2rem;
+    list-style-type: square;
+}
+
+
+.game-page-screenshots
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-page-content-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.game-page-content-title
+{
+    font-size: var(--font-size-big);
+    color: var(--color-4);
+    font-weight: 400;
+}
+
+.game-page-content-title-small
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.game-page-paragraph a
+{
+    color: var(--color-4);
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.game-page-pic-second
+{
+    float: left;
+    width: 30rem;
+}
+
+
+/* Horror Game */
+
+#horror-game-gif
+{
+    float: left;
+    width: 34rem;
+}
+
+#horror-game-screenshots
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.horror-game-pic
+{
+    width: 100%;
+}
+
+#horror-game-responsibilities
+{
+    margin-top: -8rem;
+}
+
+/* Intergalactic Burger War */
+
+#IBW-logo
+{
+    width: 24rem;
+    float: right;
+}
+
+#IBW-cards
+{
+    width: 30rem;
+    float: left;
+}
+
+#IBW-rules-1, #IBW-rules-2
+{
+    width: 32rem;
+}
+
+/* Sally Says Die! */
+
+#sally-says-die-screenshots
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sally-says-die-pic
+{
+    width: 100%;
+}
+
+#sally-says-die-responsibilities
+{
+    margin-top: -8rem;
+}

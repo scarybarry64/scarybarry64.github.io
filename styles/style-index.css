@@ -1,0 +1,141 @@
+/*************************************************************************************************/
+/* Games (Desktop) */
+
+.game
+{
+    display: flex;
+    column-gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.game__thumbnail
+{
+    width: 28rem;
+    height: 21rem;
+    margin-bottom: 2rem;
+}
+
+.game__header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid;
+    border-color: var(--color-border);
+}
+
+.game__title
+{
+    font-size: var(--font-size-big);
+    font-weight: bold;
+    color: var(--color-4);
+    margin-bottom: 0;
+}
+
+.game__date
+{
+    font-size: var(--font-size-medium);
+    /* margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid;
+    border-color: var(--color-border); */
+}
+
+.game__summary
+{
+    margin-bottom: 2rem;
+    line-height: var(--line-height-paragraph);
+}
+
+.game__summary a
+{
+    color: var(--color-4);
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.game__skills
+{
+    /* display: flex;
+    flex-direction: column; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.game__skills div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.game__btns
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 4rem;
+}
+
+.game__btn
+{
+    font-size: var(--font-size-small);
+    width: 5rem;
+    height: 2rem;
+    font-weight: 500;
+    margin-top: 40px;
+    box-shadow: none;
+    border-radius: 2rem;
+    border: var(--color-2) solid 1px;
+    text-transform: uppercase;
+}
+
+.game__btn-play
+{
+    background-color: var(--color-4);
+    color: var(--color-1);
+}
+
+.game__btn-more
+{
+    background-color: var(--color-1);
+}
+
+
+/*************************************************************************************************/
+/* Games (Mobile) */
+
+.game__skills
+{
+    font-weight: bold;
+}
+
+.game-skills-mobile
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+    /* display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    row-gap: 1rem;
+    column-gap: 10%; */
+
+    font-weight: bold;
+}
+
+.game-skills-mobile div
+{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* padding-left: 4rem; */
+}

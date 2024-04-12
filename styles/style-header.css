@@ -1,5 +1,121 @@
 /*************************************************************************************************/
-/* Header */
+/* Desktop */
+
+.header
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: var(--font-size-header);
+    font-weight: 100;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+/* .nav-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.header__top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px;
+    border-color: var(--color-border);
+    width: 100%;
+}
+
+.header__name
+{
+    display: flex;
+    justify-content: start;
+    margin-right: 2rem;
+    color: var(--color-4);
+    font-weight: bold;
+}
+
+.header__role
+{
+    display: flex;
+    justify-content: start;
+}
+
+.header__bottom
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header__nav
+{
+    display: flex;
+    column-gap: 2rem;
+}
+
+
+.header__nav-link, .portfolio-link-container
+{
+    text-wrap: nowrap;
+    transition: all 300ms;
+}
+
+.header__nav-link:hover, .portfolio-link-container:hover
+{
+    color: rgb(148, 148, 148);
+}
+
+.header__nav-link--current
+{
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    text-decoration: underline 1px var(--color-2);
+    text-underline-offset: 0.5rem;
+}
+
+.portfolio-link-container
+{
+    position: relative;
+    cursor: pointer;
+}
+
+.portfolio-link-dropdown
+{
+    position: absolute;
+    display: none;
+    top: 2rem;
+}
+
+.portfolio-dropdown-open
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.portfolio-link
+{
+    font-weight: 100;
+}
+
+.header__socials
+{
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.header__socials img
+{
+    width: 1.7rem;
+}
+
+
+/*************************************************************************************************/
+/* Mobile */
 
 .header-mobile
 {
@@ -102,25 +218,4 @@
 .social-buttons-mobile-container img
 {
     width: 2.5rem;
-}
-
-
-/*************************************************************************************************/
-/* Games (Home) */
-
-.game-skills-mobile
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.game-skills-mobile div
-{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 4rem;
 }
