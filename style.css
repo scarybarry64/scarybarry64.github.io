@@ -293,14 +293,6 @@ button
 
 .game-skills
 {
-    /* display: flex;
-    justify-content: space-evenly;
-    column-gap: 2rem;
-    font-weight: bold;
-    flex-wrap: wrap;
-    row-gap: 1.5rem;
-    margin-top: 3rem; */
-
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
