@@ -95,13 +95,13 @@
     text-transform: uppercase;
 }
 
-.game__btn-play
+.game__btn--play
 {
     background-color: var(--color-4);
     color: var(--color-1);
 }
 
-.game__btn-more
+.game__btn--more
 {
     background-color: var(--color-1);
 }

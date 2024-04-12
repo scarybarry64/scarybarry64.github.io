@@ -58,13 +58,13 @@
 }
 
 
-.header__nav-link, .portfolio-link-container
+.header__nav-link, .header__games
 {
     text-wrap: nowrap;
     transition: all 300ms;
 }
 
-.header__nav-link:hover, .portfolio-link-container:hover
+.header__nav-link:hover, .header__games:hover
 {
     color: rgb(148, 148, 148);
 }
@@ -77,29 +77,24 @@
     text-underline-offset: 0.5rem;
 }
 
-.portfolio-link-container
+.header__games
 {
     position: relative;
     cursor: pointer;
 }
 
-.portfolio-link-dropdown
+.header__games-dropdown
 {
     position: absolute;
     display: none;
     top: 2rem;
 }
 
-.portfolio-dropdown-open
+.header__games-dropdown--open
 {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-}
-
-.portfolio-link
-{
-    font-weight: 100;
 }
 
 .header__socials
@@ -152,12 +147,12 @@
     transition: translate 400ms ease-in-out;
 }
 
-.hamburger-button:has(input:checked) + .nav-sidebar
+.hamburger-nav:has(input:checked) + .nav-sidebar
 {
     translate: 0;
 }
 
-.hamburger-button input
+.hamburger-nav input
 {
     appearance: none;
 }
@@ -181,7 +176,7 @@
     transition: all 0.3 ease-in-out;
 }
 
-.nav-links-mobile-container
+.nav-sidebar__links
 {
     display: flex;
     flex-direction: column;
@@ -197,7 +192,7 @@
     user-select: none;
 }
 
-.game-links-mobile-container
+.nav-sidebar__games
 {
     display: flex;
     flex-direction: column;
@@ -208,14 +203,14 @@
     border-color: var(--color-border);
 }
 
-.social-buttons-mobile-container
+.nav-sidebar__socials
 {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
 }
 
-.social-buttons-mobile-container img
+.nav-sidebar__socials img
 {
     width: 2.5rem;
 }

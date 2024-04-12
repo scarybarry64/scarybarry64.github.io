@@ -23,12 +23,12 @@
             <nav class="header__bottom">
                 <div class="header__nav">
                     <a class="header__nav-link header__nav-link--current" href="index.html">home</a>
-                    <div class="portfolio-link-container" onclick="togglePortfolioDropdown()">games
-                        <div class="portfolio-link-dropdown">
-                            <a class="portfolio-link" href="last-lunar-air.html">Last Lunar Air</a>
-                            <a class="portfolio-link" href="horror-game.html">Horror Game</a>
-                            <a class="portfolio-link" href="sally-says-die.html">Sally Says Die</a>
-                            <a class="portfolio-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
+                    <div class="header__games" onclick="toggleGamesDropdown()">games
+                        <div class="header__games-dropdown">
+                            <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
+                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
+                            <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
+                            <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
                         </div>
                     </div>
                     <a class="header__nav-link" href="media/resume.pdf" target="_blank">resume</a>
@@ -51,27 +51,13 @@
             </nav>
         </header>
         <header class="header-mobile">
-            <section class="header-mobile-section-left">
-                <div class="name">BARRY DAY</div>
-                <div class="career-role">Game Programmer|Designer</div>
-                <div class="career-role-shortened">Game Developer</div>
-                <!-- <div class="social-media-buttons-container">
-                    <button onclick="window.open('mailto:brday7@gmail.com')">
-                        <img src="media/icons/email-icon.svg">
-                    </button>
-                    <button onclick="window.open('https://www.linkedin.com/in/barry-day-18931898/')">
-                        <img src="media/icons/linkedin-icon.svg">
-                    </button>
-                    <button onclick="window.open('https://github.com/scarybarry64')">
-                        <img src="media/icons/github-icon.svg">
-                    </button>
-                    <button onclick="window.open('https://scarybarry.itch.io/')">
-                        <img src="media/icons/itchio-icon.svg">
-                    </button>
-                </div> -->
+            <section class="header-mobile__left">
+                <div class="header__name">BARRY DAY</div>
+                <div class="header__role">Game Programmer|Designer</div>
+                <div class="header__role-short">Game Developer</div>
             </section>
-            <section class="header-mobile-section-right">
-                <label class="hamburger-button">
+            <section class="header-mobile__right">
+                <label class="hamburger-nav">
                     <input type="checkbox">
                     <div class="hamburger-icon">
                         <span></span>
@@ -80,8 +66,8 @@
                     </div>
                 </label>
                 <div class="nav-sidebar">
-                    <div class="nav-links-mobile-container">
-                        <div class="game-links-mobile-container">
+                    <div class="nav-sidebar__links">
+                        <div class="nav-sidebar__games">
                             <a href="last-lunar-air.html">last lunar air</a>
                             <a href="horror-game.html">horror game</a>
                             <a href="sally-says-die.html">sally says die!</a>
@@ -90,7 +76,7 @@
                         <a href="media/resume.pdf" target="_blank">resume</a>
                         <a href="about.html">about</a>
                     </div>
-                    <div class="social-buttons-mobile-container">
+                    <div class="nav-sidebar__socials">
                         <img src="media/icons/email-icon.svg">
                         <img src="media/icons/linkedin-icon.svg">
                         <img src="media/icons/github-icon.svg">
@@ -130,12 +116,12 @@
                     </div>
                     <div class="game__btns">
                         <a href="https://scarybarry.itch.io/last-lunar-air" target="_blank">
-                            <button class="game__btn game__btn-play">
+                            <button class="game__btn game__btn--play">
                                 play
                             </button>
                         </a>
                         <a href="last-lunar-air.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 more
                             </button>
                         </a>
@@ -171,7 +157,7 @@
                     </div>
                     <div class="game__btns">
                         <a href="horror-game.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 more
                             </button>
                         </a>
@@ -204,7 +190,7 @@
                     </div>
                     <div class="game__btns">
                         <a href="sally-says-die.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 MORE
                             </button>
                         </a>
@@ -238,7 +224,7 @@
                     </div>
                     <div class="game__btns">
                         <a href="intergalactic-burger-war.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 MORE
                             </button>
                         </a>
@@ -273,12 +259,12 @@
                     </div>
                     <div class="game__btns">
                         <a href="https://scarybarry.itch.io/last-lunar-air" target="_blank">
-                            <button class="game__btn game__btn-play">
+                            <button class="game__btn game__btn--play">
                                 play
                             </button>
                         </a>
                         <a href="last-lunar-air.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 more
                             </button>
                         </a>
@@ -314,7 +300,7 @@
                     </div>
                     <div class="game_btns">
                         <a href="horror-game.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 more
                             </button>
                         </a>
@@ -347,7 +333,7 @@
                     </div>
                     <div class="game__btns">
                         <a href="sally-says-die.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 MORE
                             </button>
                         </a>
@@ -381,7 +367,7 @@
                     </div>
                     <div class="game__btns">
                         <a href="intergalactic-burger-war.html">
-                            <button class="game__btn game__btn-more">
+                            <button class="game__btn game__btn--more">
                                 MORE
                             </button>
                         </a>

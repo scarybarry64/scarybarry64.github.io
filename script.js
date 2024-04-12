@@ -35,40 +35,40 @@
 // container is the outer-most element, holds dropdown
 // dropdown holds the portfolio links and is the thing that will be shown/hidden
 
-const container = document.querySelector(".portfolio-link-container");
-const dropdown = document.querySelector(".portfolio-link-dropdown");
+const games = document.querySelector(".header__games");
+const gamesDropdown = document.querySelector(".header__games-dropdown");
 isOpen = false;
 
-function togglePortfolioDropdown()
+function toggleGamesDropdown()
 {
     if (!isOpen)
     {
-        openPortfolioDropdown();
+        openGamesDropdown();
     }
     else
     {
-        closePortfolioDropdown();
+        closeGamesDropdown();
     }
 }
 
-function openPortfolioDropdown()
+function openGamesDropdown()
 {
-    dropdown.classList.add('portfolio-dropdown-open');
-    document.addEventListener("click", closePortfolioDropdownOnOutsideClick);
+    gamesDropdown.classList.add('header__games-dropdown--open');
+    document.addEventListener("click", closeGamesDropdownOnOutsideClick);
     isOpen = true;
 }
 
-function closePortfolioDropdown()
+function closeGamesDropdown()
 {
-    dropdown.classList.remove('portfolio-dropdown-open');
-    document.removeEventListener("click", closePortfolioDropdownOnOutsideClick);
+    gamesDropdown.classList.remove('header__games-dropdown--open');
+    document.removeEventListener("click", closeGamesDropdownOnOutsideClick);
     isOpen = false;
 }
 
-function closePortfolioDropdownOnOutsideClick(event)
+function closeGamesDropdownOnOutsideClick(event)
 {
-    if (event.target != container)
+    if (event.target != games)
     {   
-        closePortfolioDropdown();
+        closeGamesDropdown();
     }
 }
