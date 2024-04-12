@@ -114,14 +114,13 @@
     grid-template-columns: 1fr 1fr;
     row-gap: 1rem;
     font-weight: bold;
-    padding-left: 1rem;
-    padding-right: 1rem;
     margin-bottom: 1rem;
 }
 
 .game-skills-mobile div
 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    padding-left: 4rem;
 }
