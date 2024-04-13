@@ -3,8 +3,25 @@
 
 .game-page
 {
-    margin-left: 14rem;
-    margin-right: 14rem;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.5rem;
+}
+
+.game-page-mobile
+{
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+
     line-height: 1.5rem;
 }
 
@@ -19,6 +36,83 @@
     font-weight: 500;
 }
 
+/************************************************/
+/* Sections */
+
+.game-page__section
+{
+    display: flex;
+    justify-content: center;
+}
+
+.game-page__overview
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    margin-bottom: 4rem;
+    padding-right: 4rem;
+}
+
+.game-page__overview-specs
+{
+    margin-top: 1rem;
+}
+
+.game-page__respon
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.4rem;
+    padding-left: 4rem;
+    margin-bottom: 4rem;
+}
+
+.game-page__respon-list
+{
+    padding-left: 1.2rem;
+    list-style-type: square;
+}
+
+.game-page__section-title
+{
+    font-size: var(--font-size-big);
+    color: var(--color-4);
+    font-weight: 400;
+}
+
+.game-page__section-subtitle
+{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: -0.7rem;
+}
+
+.game-page__overview-paragraph a
+{
+    color: var(--color-4);
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.game-page__screenshots
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/************************************************/
+/* Pics */
+
+.game-page__pic-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+/* OLD */
+
 .game-page-title
 {
     display: flex;
@@ -28,49 +122,6 @@
     margin-bottom: 4rem;
 }
 
-.game-page-video
-{
-    aspect-ratio: 16 / 9;
-    width: 560px;
-    float: right;
-}
-
-.game-page-overview
-{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.4rem;
-    margin-bottom: 4rem;
-    padding-right: 4rem;
-}
-
-.game-page-stats
-{
-    margin-top: 1rem;
-}
-
-.game-page-responsibilities
-{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.4rem;
-    padding-left: 4rem;
-    margin-bottom: 6rem;
-}
-
-.game-page-responsibilities-list
-{
-    padding-left: 1.2rem;
-    list-style-type: square;
-}
-
-
-.game-page-screenshots
-{
-    display: flex;
-    justify-content: space-between;
-}
-
 .game-page-content-container
 {
     display: flex;
@@ -78,25 +129,17 @@
     justify-content: start;
 }
 
-.game-page-content-title
+.game-page-video
 {
-    font-size: var(--font-size-big);
-    color: var(--color-4);
-    font-weight: 400;
+    aspect-ratio: 16 / 9;
+    width: 560px;
+    float: right;
 }
 
-.game-page-content-title-small
+.game-page-screenshots
 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-}
-
-.game-page-paragraph a
-{
-    color: var(--color-4);
-    font-weight: 300;
-    text-decoration: underline;
+    display: flex;
+    justify-content: space-between;
 }
 
 .game-page-pic-second
@@ -106,6 +149,7 @@
 }
 
 
+/*************************************************************************************************/
 /* Horror Game */
 
 #horror-game-gif
@@ -132,25 +176,7 @@
     margin-top: -8rem;
 }
 
-/* Intergalactic Burger War */
-
-#IBW-logo
-{
-    width: 24rem;
-    float: right;
-}
-
-#IBW-cards
-{
-    width: 30rem;
-    float: left;
-}
-
-#IBW-rules-1, #IBW-rules-2
-{
-    width: 32rem;
-}
-
+/*************************************************************************************************/
 /* Sally Says Die! */
 
 #sally-says-die-screenshots
@@ -169,4 +195,23 @@
 #sally-says-die-responsibilities
 {
     margin-top: -8rem;
+}
+
+/*************************************************************************************************/
+/* Intergalactic Burger War */
+
+#IBW-logo
+{
+    width: 24rem;
+}
+
+#IBW-cards
+{
+    width: 30rem;
+}
+
+#IBW-rules-1, #IBW-rules-2
+{
+    width: 100%;
+    height: 100%;
 }

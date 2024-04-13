@@ -1,5 +1,9 @@
+/*************************************************************************************************/
+
 @media (width > 1500px)
 {
+    /* Header */
+
     .header
     {
         font-size: 1.2rem;
@@ -11,37 +15,60 @@
     }
 }
 
+/*************************************************************************************************/
+
 @media (width > 950px)
 {
+    /* General */
+    
     body
     {
         padding-left: 4rem;
         padding-right: 4rem;
     }
 
+    /* Header */
+
     .header
     {
         max-width: 48rem;
     }
 
+    /* Index */
+
     .games-mobile
+    {
+        display: none;
+    }
+
+    /* Game Page */
+
+    .game-page-mobile
     {
         display: none;
     }
 }
 
+/*************************************************************************************************/
+
 @media (width <= 950px)
 {
+    /* General */
+    
     body
     {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
     }
+
+    /* Header */
 
     .header__role-short
     {
         display: none;
     }
+
+    /* Index */
 
     .games
     {
@@ -63,11 +90,73 @@
         width: 100%;
         height: 100%;
     }
+
+    /* Game Page */
+
+    /* .game-page-mobile
+    {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    } */
 }
 
+/*************************************************************************************************/
+
+@media (width <= 900px)
+{
+    /* Game Page */
+
+    .game-page
+    {
+        display: none;
+    }
+
+    .game-page-mobile
+    {
+        display: flex;
+    }
+
+    .game-page__section
+    {
+        display: block;
+    }
+
+    .game-page__overview
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .game-page__respon
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .game-page__screenshots
+    {
+        display: block;
+    }
+
+    #IBW-logo
+    {
+        width: 80%;
+        margin-top: 3rem;
+    }
+
+    #IBW-cards, #IBW-rules-1, #IBW-rules-2
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/*************************************************************************************************/
 
 @media (600px < width <= 950px)
 {
+    /* Header */
+    
     .header
     {
         max-width: 38rem;
@@ -79,17 +168,32 @@
     }
 }
 
+/*************************************************************************************************/
+
 @media (width > 600px)
 {
+    /* Header */
+    
     .header-mobile
     {
         display: none;
     }
 }
 
+/*************************************************************************************************/
 
 @media (width <= 600px)
 {
+    /* General */
+
+    body
+    {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    /* Header */
+    
     .header
     {
         display: none;
@@ -101,16 +205,24 @@
     }
 }
 
+/*************************************************************************************************/
+
 @media (width <= 400px)
 {
+    /* Index */
+    
     .game__skills
     {
         font-size: calc(var(--font-size-small) * 0.9);
     }
 }
 
+/*************************************************************************************************/
+
 @media (width <= 300px)
 {
+    /* Header */
+    
     .header-mobile, .nav-sidebar__links
     {
         font-size: calc(var(--font-size-small) * 1.1);
