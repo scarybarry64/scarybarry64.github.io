@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+        <title>Sally Says Die! | Details</title>
+        <link rel="stylesheet" href="styles/style-master.css">
+        <link rel="stylesheet" href="styles/style-header.css">
+        <link rel="stylesheet" href="styles/style-gamepage.css">
+        <link rel="stylesheet" href="styles/style-media-queries.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <p class="header__name">BARRY DAY</p>
+                <p class="header__role">Game Programmer|Designer</p>
+            </div>
+            <nav class="header__bottom">
+                <div class="header__nav">
+                    <a class="header__nav-link" href="index.html">home</a>
+                    <div class="header__games header__nav-link--current" onclick="toggleGamesDropdown()">games
+                        <div class="header__games-dropdown">
+                            <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
+                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
+                            <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
+                            <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
+                        </div>
+                    </div>
+                    <a class="header__nav-link" href="media/resume.pdf" target="_blank">resume</a>
+                    <a class="header__nav-link" href="about.html">about</a>
+                </div>
+                <div class="header__socials">
+                    <a href="mailto:brday7@gmail.com" target="_blank">
+                        <img src="media/icons/email-icon.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
+                        <img src="media/icons/linkedin-icon.svg">
+                    </a>
+                    <a href="https://github.com/scarybarry64" target="_blank">
+                        <img src="media/icons/github-icon.svg">
+                    </a>
+                    <a href="https://scarybarry.itch.io/" target="_blank">
+                        <img src="media/icons/itchio-icon.svg">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <header class="header-mobile">
+            <a href="index.html">
+                <section class="header-mobile__left">
+                    <div class="header__name">BARRY DAY</div>
+                    <div class="header__role header__role--overline">Game Developer</div>
+                </section>
+            </a>
+            <section class="header-mobile__right">
+                <label class="hamburger-nav">
+                    <input type="checkbox">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <div class="nav-sidebar">
+                    <div class="nav-sidebar__links">
+                        <div class="nav-sidebar__games">
+                            <a href="last-lunar-air.html">last lunar air</a>
+                            <a href="horror-game.html">horror game</a>
+                            <a href="sally-says-die.html">sally says die!</a>
+                            <a href="intergalactic-burger-war.html">intergalactic burger war</a>
+                        </div>
+                        <a href="media/resume.pdf" target="_blank">resume</a>
+                        <a href="about.html">about</a>
+                    </div>
+                    <div class="nav-sidebar__socials">
+                        <a href="mailto:brday7@gmail.com" target="_blank">
+                            <img src="media/icons/email-icon.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
+                            <img src="media/icons/linkedin-icon.svg">
+                        </a>
+                        <a href="https://github.com/scarybarry64" target="_blank">
+                            <img src="media/icons/github-icon.svg">
+                        </a>
+                        <a href="https://scarybarry.itch.io/" target="_blank">
+                            <img src="media/icons/itchio-icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="game-page">
+            <div class="game-page__title">Sally Says Die!</div>
+            <section class="game-page__section">
+                <div class="game-page__overview">
+                    <div class="game-page__section-title">Overview</div>
+                    <p class="game-page__overview-paragraph">
+                        Don’t let them hug you! In this 2D top-down puzzle-platformer, your first day on the job at <i>Rodney Rodent’s Pizza Palooza</i> has turned into your greatest fear: a kids’ birthday party. So dodge lethal hugs, traverse the mall, and escape the sugar-n-booger horde before they turn you into birthday cake. Sally says DIE!
+                    </p>
+                    <p class="game-page__overview-paragraph">
+                        Made in 48 hours by a team of 3 for the <em>2024 Global Game Jam</em>. The team consisted of myself (lead programmer), <a href="https://lvien.github.io/" target="_blank">Andrew Vien</a> (level and sound designer), and <a href="https://minimeowx.wixsite.com/artbyrylie" target="_blank">Rylie Parker</a> (art).
+                    <div class="game-page__overview-specs">
+                        <p><b>Genre: </b>2D Top-Down Puzzle-Platformer</p>
+                        <p><b>Team Size: </b>3</p>
+                        <p><b>Tools Used: </b>Unity, C#, Git</p>
+                        <p><b>Status: </b> Released</p>
+                    </div>
+                </div>
+                <div class="game-page__pic-wrapper">
+                    <iframe class="game-page__video" src="https://www.youtube.com/embed/BgHtoeMEMvU?si=-do0EhSybx6CQl4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="game-page__section">
+                <div class="game-page__pic-wrapper">
+                    <img class="game-page__2" src="media/sally-says-die/sally-says-die-pic-1.png">
+                </div>
+                <div class="game-page__respon">
+                    <div class="game-page__section-title">Responsibilities and Achievements</div>
+                    <ul class="game-page__respon-list">
+                        <li>
+                            Built a scalable enemy AI system using state machines, class inheritance, and custom prefabs that allows for different AIs to share a base behavior set
+                        </li>
+                        <li>
+                            Implemented player movement and collision detection
+                        </li>
+                        <li>
+                            Designed and implemented unique mechanics for 5 different enemy types, including path detection, blindspots, melee and ranged attacks, teleportation, AOE alerts, and semi-random behavior
+                        </li>
+                        <li>
+                            Designed and implemented an item system, including an upgradable key that opens doors throughout the level and a ranged attack that follows the mouse cursor
+                        </li>
+                        <li>
+                            Collaborated with my teammate on a dialogue system, troubleshooting his code to fix bugs and help him learn the nuances of Unity
+                        </li>
+                        <li>
+                            Coordinated with my team using production tools and version control to work on tasks in parallel
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="game-page__screenshots">
+                <img class="game-page__pic-screenshot" src="media/sally-says-die/sally-says-die-pic-2.png">
+                <img class="game-page__pic-screenshot" src="media/sally-says-die/sally-says-die-pic-3.png">
+            </section>
+        </main>
+        <main class="game-page-mobile">
+            <div class="game-page__title">Sally Says Die!</div>
+            <div class="game-page__pic-wrapper">
+                <iframe class="game-page__video" src="https://www.youtube.com/embed/BgHtoeMEMvU?si=-do0EhSybx6CQl4l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <section class="game-page__section">
+                <div class="game-page__overview">
+                    <div class="game-page__section-title">Overview</div>
+                    <p class="game-page__overview-paragraph">
+                        Don’t let them hug you! In this 2D top-down puzzle-platformer, your first day on the job at <i>Rodney Rodent’s Pizza Palooza</i> has turned into your greatest fear: a kids’ birthday party. So dodge lethal hugs, traverse the mall, and escape the sugar-n-booger horde before they turn you into birthday cake. Sally says DIE!
+                    </p>
+                    <p class="game-page__overview-paragraph">
+                        Made in 48 hours by a team of 3 for the <em>2024 Global Game Jam</em>. The team consisted of myself (lead programmer), <a href="https://lvien.github.io/" target="_blank">Andrew Vien</a> (level and sound designer), and <a href="https://minimeowx.wixsite.com/artbyrylie" target="_blank">Rylie Parker</a> (art).
+                    <div class="game-page__overview-specs">
+                        <p><b>Genre: </b>2D Top-Down Puzzle-Platformer</p>
+                        <p><b>Team Size: </b>3</p>
+                        <p><b>Tools Used: </b>Unity, C#, Git</p>
+                        <p><b>Status: </b> Released</p>
+                    </div>
+                </div>
+            </section>
+            <div class="game-page__pic-wrapper">
+                <img class="game-page__pic-2" src="media/sally-says-die/sally-says-die-pic-1.png">
+            </div>
+            <section class="game-page__section">
+                <div class="game-page__respon">
+                    <div class="game-page__section-title">Responsibilities and Achievements</div>
+                    <ul class="game-page__respon-list">
+                        <li>
+                            Built a scalable enemy AI system using state machines, class inheritance, and custom prefabs that allows for different AIs to share a base behavior set
+                        </li>
+                        <li>
+                            Implemented player movement and collision detection
+                        </li>
+                        <li>
+                            Designed and implemented unique mechanics for 5 different enemy types, including path detection, blindspots, melee and ranged attacks, teleportation, AOE alerts, and semi-random behavior
+                        </li>
+                        <li>
+                            Designed and implemented an item system, including an upgradable key that opens doors throughout the level and a ranged attack that follows the mouse cursor
+                        </li>
+                        <li>
+                            Collaborated with my teammate on a dialogue system, troubleshooting his code to fix bugs and help him learn the nuances of Unity
+                        </li>
+                        <li>
+                            Coordinated with my team using production tools and version control to work on tasks in parallel
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="game-page__screenshots">
+                <img class="game-page__pic-screenshot" src="media/sally-says-die/sally-says-die-pic-2.png">
+                <img class="game-page__pic-screenshot" src="media/sally-says-die/sally-says-die-pic-3.png">
+            </section>
+        </main>
+        <footer>
+            <p>&#169; 2024 Barry Day</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

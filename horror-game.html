@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaler=1.0">
+        <title>Horror Game | Details</title>
+        <link rel="stylesheet" href="styles/style-master.css">
+        <link rel="stylesheet" href="styles/style-header.css">
+        <link rel="stylesheet" href="styles/style-gamepage.css">
+        <link rel="stylesheet" href="styles/style-media-queries.css">
+        <link rel="preconnect" href="https://rsms.me/">
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__top">
+                <p class="header__name">BARRY DAY</p>
+                <p class="header__role">Game Programmer|Designer</p>
+            </div>
+            <nav class="header__bottom">
+                <div class="header__nav">
+                    <a class="header__nav-link" href="index.html">home</a>
+                    <div class="header__games header__nav-link--current" onclick="toggleGamesDropdown()">games
+                        <div class="header__games-dropdown">
+                            <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
+                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
+                            <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
+                            <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
+                        </div>
+                    </div>
+                    <a class="header__nav-link" href="media/resume.pdf" target="_blank">resume</a>
+                    <a class="header__nav-link" href="about.html">about</a>
+                </div>
+                <div class="header__socials">
+                    <a href="mailto:brday7@gmail.com" target="_blank">
+                        <img src="media/icons/email-icon.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
+                        <img src="media/icons/linkedin-icon.svg">
+                    </a>
+                    <a href="https://github.com/scarybarry64" target="_blank">
+                        <img src="media/icons/github-icon.svg">
+                    </a>
+                    <a href="https://scarybarry.itch.io/" target="_blank">
+                        <img src="media/icons/itchio-icon.svg">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <header class="header-mobile">
+            <a href="index.html">
+                <section class="header-mobile__left">
+                    <div class="header__name">BARRY DAY</div>
+                    <div class="header__role header__role--overline">Game Developer</div>
+                </section>
+            </a>
+            <section class="header-mobile__right">
+                <label class="hamburger-nav">
+                    <input type="checkbox">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <div class="nav-sidebar">
+                    <div class="nav-sidebar__links">
+                        <div class="nav-sidebar__games">
+                            <a href="last-lunar-air.html">last lunar air</a>
+                            <a href="horror-game.html">horror game</a>
+                            <a href="sally-says-die.html">sally says die!</a>
+                            <a href="intergalactic-burger-war.html">intergalactic burger war</a>
+                        </div>
+                        <a href="media/resume.pdf" target="_blank">resume</a>
+                        <a href="about.html">about</a>
+                    </div>
+                    <div class="nav-sidebar__socials">
+                        <a href="mailto:brday7@gmail.com" target="_blank">
+                            <img src="media/icons/email-icon.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
+                            <img src="media/icons/linkedin-icon.svg">
+                        </a>
+                        <a href="https://github.com/scarybarry64" target="_blank">
+                            <img src="media/icons/github-icon.svg">
+                        </a>
+                        <a href="https://scarybarry.itch.io/" target="_blank">
+                            <img src="media/icons/itchio-icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="game-page">
+            <div class="game-page__title">N64 Horror Game</div>
+            <section class="game-page__section">
+                <main class="game-page__overview">
+                    <div class="game-page__section-title">Overview</div>
+                    <p class="game-page__overview-paragraph">
+                        <i>A boy searches for his lost dog in the woods. A lone cabin greets him.</i>
+                    </p>
+                    <p class="game-page__overview-paragraph">
+                        A first-person survival horror game inspired by late 90s consoles, when the limitations of 3D birthed the best and scariest games of our childhoods.
+                    </p>
+                    <p class="game-page__overview-paragraph">
+                        This game is being made together with my friend <a href="https://lvien.github.io/" target="_blank">Andrew Vien</a>. It's our first large project in Unreal Engine 5, serving as a workshop of ideas and interesting mechanics as we learn the engine. In particular, we’ve designed enemies that dynamically react to light, as well as a system for environmental storytelling. A Steam release is scheduled for early 2025. 
+                    </p>
+                    <div class="game-page__overview-specs">
+                        <p><b>Genre: </b>First-Person Survival Horror</p>
+                        <p><b>Team Size: </b>2</p>
+                        <p><b>Tools Used: </b>UE5, C++/Blueprints, Blender, Reaper</p>
+                        <p><b>Status: </b> In Development</p>
+                    </div>
+                </main>
+                <div class="game-page__pic-wrapper">
+                    <iframe class="game-page__video" src="https://www.youtube.com/embed/f_U6SOQwq2U?si=9F7Ei_SRGWoXEqNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="game-page__section">
+                <div class="game-page__pic-wrapper">
+                    <img class="game-page__pic-2" src="media/horror-game/horror-gif.gif">
+                </div>
+                <div class="game-page__respon">
+                    <div class="game-page__section-title">Responsibilities and Achievements</div>
+                    <div class="game-page__section-subtitle">Programming and AI</div>
+                    <ul class="game-page__respon-list">
+                        <li>
+                            Designed a variety of enemy AIs that dynamically react to light – both static and player-caused – using behavior trees and environmental query systems
+                        </li>
+                        <li>
+                            Built a system for environmental storytelling, using C++ to create placeable blueprints that interact with other systems such as lighting, AI, and SFX
+                        </li>
+                    </ul>
+                    <div class="game-page__section-subtitle">Level Design</div>
+                    <ul class="game-page__respon-list">
+                        <li>
+                            Designed, greyboxed, and implemented the starting level
+                        </li>
+                        <li>
+                            Modeled and textured low-poly assets using Blender
+                        </li>
+                        <li>
+                            Implemented lo-fi post-processing VFX
+                        </li>
+                        <li>
+                            Designed and mixed ambience and sound FX in Reaper
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="game-page__screenshots">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-1.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-2.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-3.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-4.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-5.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-6.png">
+            </section>
+        </main>
+        <main class="game-page-mobile">
+            <div class="game-page__title">N64 Horror Game</div>
+            <div class="game-page__pic-wrapper">
+                <iframe class="game-page__video" src="https://www.youtube.com/embed/f_U6SOQwq2U?si=9F7Ei_SRGWoXEqNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <section class="game-page__section">
+                <main class="game-page__overview">
+                    <div class="game-page__section-title">Overview</div>
+                    <p class="game-page__overview-paragraph">
+                        <i>A boy searches for his lost dog in the woods. A lone cabin greets him.</i>
+                    </p>
+                    <p class="game-page__overview-paragraph">
+                         (Title) is a first-person survival horror game inspired by late 90s consoles, when the limitations of 3D birthed the best and scariest games of our childhoods.
+                    </p>
+                    <p class="game-page__overview-paragraph">
+                        This game is being made together with my friend <a href="https://lvien.github.io/" target="_blank">Andrew Vien</a>. It's our first large project in Unreal Engine 5, serving as a workshop of ideas and interesting mechanics as we learn the engine. In particular, we’ve designed enemies that dynamically react to light, as well as a system for environmental storytelling. A Steam release is scheduled for early 2025. 
+                    </p>
+                    <div class="game-page__overview-specs">
+                        <p><b>Genre: </b>First-Person Survival Horror</p>
+                        <p><b>Team Size: </b>2</p>
+                        <p><b>Tools Used: </b>UE5, C++/Blueprints, Blender, Reaper</p>
+                        <p><b>Status: </b> In Development</p>
+                    </div>
+                </main>
+            </section>
+            <div class="game-page__pic-wrapper">
+                <img class="game-page__pic-2" src="media/horror-game/horror-gif.gif">
+            </div>
+            <section class="game-page__section">
+                <div class="game-page__respon game-page__respon--adjusted">
+                    <div class="game-page__section-title">Responsibilities and Achievements</div>
+                    <div class="game-page__section-subtitle">Programming and AI</div>
+                    <ul class="game-page__respon-list">
+                        <li>
+                            Designed a variety of enemy AIs that dynamically react to light – both static and player-caused – using behavior trees and environmental query systems
+                        </li>
+                        <li>
+                            Built a system for environmental storytelling, using C++ to create placeable blueprints that interact with other systems such as lighting, AI, and SFX
+                        </li>
+                    </ul>
+                    <div class="game-page__section-subtitle">Level Design</div>
+                    <ul class="game-page__respon-list">
+                        <li>
+                            Designed, greyboxed, and implemented the starting level
+                        </li>
+                        <li>
+                            Modeled and textured low-poly assets using Blender
+                        </li>
+                        <li>
+                            Implemented lo-fi post-processing VFX
+                        </li>
+                        <li>
+                            Designed and mixed ambience and sound FX in Reaper
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="game-page__screenshots">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-1.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-2.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-3.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-4.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-5.png">
+                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-6.png">
+            </section>
+        </main>
+        <footer>
+            <p>&#169; 2024 Barry Day</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
