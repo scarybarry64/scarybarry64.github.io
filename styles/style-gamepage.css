@@ -3,7 +3,7 @@
 
 .game-page
 {
-    max-width: 60rem;
+    max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -164,11 +164,11 @@
 /*************************************************************************************************/
 /* Horror Game */
 
-.game-page__respon--adjusted
+/* .game-page__respon--adjusted
 {
     margin-top: -14rem;
     margin-bottom: 10rem;
-}
+} */
 
 /*************************************************************************************************/
 /* Sally Says Die! */
