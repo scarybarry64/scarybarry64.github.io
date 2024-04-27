@@ -3,8 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scaler=1.0">
-        <title>About | Barry Day | Game Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+        <title>About Me | Barry Day</title>
+        <link rel="stylesheet" href="styles/style-master.css">
+        <link rel="stylesheet" href="styles/style-about.css">
+        <link rel="stylesheet" href="styles/style-header.css">
+        <link rel="stylesheet" href="styles/style-media-queries.css">
         <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,52 +17,180 @@
     <body>
         <!-- <div class="transition transition-1 is-active"></div> -->
         <header class="header">
-            <!-- <div class="portrait-container">
-                <img class="portrait" src="knight-portrait-v2.png">
-            </div> -->
-            <nav class="nav-container">
-                <div class="name-container">
-                    <p class="name">BARRY DAY</p>
-                    <p class="career-role">Game Programmer|Designer</p>
-                </div>
-                <nav class="nav-bar">
-                    <div class="nav-links-container">
-                        <a class="nav-link-current" href="index.html">home</a>
-                        <div class="portfolio-link-container" onclick="togglePortfolioDropdown()">games
-                            <div class="portfolio-link-dropdown">
-                                <a class="portfolio-link">Last Lunar Air</a>
-                                <a class="portfolio-link" href="horror-game.html">Horror Game</a>
-                                <a class="portfolio-link" href="sally-says-die.html">Sally Says Die</a>
-                                <a class="portfolio-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
-                            </div>
+            <div class="header__top">
+                <p class="header__name">BARRY DAY</p>
+                <p class="header__role">Game Programmer|Designer</p>
+            </div>
+            <nav class="header__bottom">
+                <div class="header__nav">
+                    <a class="header__nav-link" href="index.html">home</a>
+                    <div class="header__games" onclick="toggleGamesDropdown()">games
+                        <div class="header__games-dropdown">
+                            <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
+                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
+                            <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
+                            <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
                         </div>
-                        <a class="nav-link" href="media/resume.pdf" target="_blank">resume</a>
-                        <a class="nav-link" href="about.html">about</a>
                     </div>
-                    <div class="social-media-buttons-container">
-                        <button onclick="window.open('mailto:brday7@gmail.com')">
-                            <img src="media/icons/email-icon.svg">
-                        </button>
-                        <button onclick="window.open('https://www.linkedin.com/in/barry-day-18931898/')">
-                            <img src="media/icons/linkedin-icon.svg">
-                        </button>
-                        <button onclick="window.open('https://github.com/scarybarry64')">
-                            <img src="media/icons/github-icon.svg">
-                        </button>
-                        <button onclick="window.open('https://scarybarry.itch.io/')">
-                            <img src="media/icons/itchio-icon.svg">
-                        </button>
-                    </div>
-                </nav>
+                    <a class="header__nav-link" href="media/resume.pdf" target="_blank">resume</a>
+                    <a class="header__nav-link header__nav-link--current" href="about.html">about</a>
+                </div>
+                <div class="header__socials">
+                    <a href="mailto:brday7@gmail.com" target="_blank">
+                        <img src="media/icons/email-icon.svg">
+                    </a>
+                    <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
+                        <img src="media/icons/linkedin-icon.svg">
+                    </a>
+                    <a href="https://github.com/scarybarry64" target="_blank">
+                        <img src="media/icons/github-icon.svg">
+                    </a>
+                    <a href="https://scarybarry.itch.io/" target="_blank">
+                        <img src="media/icons/itchio-icon.svg">
+                    </a>
+                </div>
             </nav>
         </header>
-        <main>
-            <div class="portrait-container">
-                <img class="portrait" src="media/portraits/portrait4.png">
+        <header class="header-mobile">
+            <a href="index.html">
+                <section class="header-mobile__left">
+                    <div class="header__name">BARRY DAY</div>
+                    <div class="header__role header__role--overline">Game Developer</div>
+                </section>
+            </a>
+            <section class="header-mobile__right">
+                <label class="hamburger-nav">
+                    <input type="checkbox">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </label>
+                <div class="nav-sidebar">
+                    <div class="nav-sidebar__links">
+                        <div class="nav-sidebar__games">
+                            <a href="last-lunar-air.html">last lunar air</a>
+                            <a href="horror-game.html">horror game</a>
+                            <a href="sally-says-die.html">sally says die!</a>
+                            <a href="intergalactic-burger-war.html">intergalactic burger war</a>
+                        </div>
+                        <a href="media/resume.pdf" target="_blank">resume</a>
+                        <a href="about.html">about</a>
+                    </div>
+                    <div class="nav-sidebar__socials">
+                        <a href="mailto:brday7@gmail.com" target="_blank">
+                            <img src="media/icons/email-icon.svg">
+                        </a>
+                        <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
+                            <img src="media/icons/linkedin-icon.svg">
+                        </a>
+                        <a href="https://github.com/scarybarry64" target="_blank">
+                            <img src="media/icons/github-icon.svg">
+                        </a>
+                        <a href="https://scarybarry.itch.io/" target="_blank">
+                            <img src="media/icons/itchio-icon.svg">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main class="about-page">
+            <div class="about-page__section-wrapper">
+                <div class="about-page__portrait-wrapper">
+                    <img src="media/portraits/portrait-5.png">
+                </div>
+                <section class="about-page__section">
+                    <div class="about-page__section-title">
+                        About Me
+                    </div>
+                    <p>
+                        I’m a lvl 27 human who likes to make games. 
+                    </p>
+                    <p>
+                        I combine a strong background in computer science with a lifelong passion for design to approach game development from multiple perspectives: how games work, how they look, and how they feel. I especially like designing and implementing mechanics, building core systems, and writing AI. I enjoy working both independently and in teams.
+                    </p>
+                    <p>
+                        I seek to join a team of like-minded game developers – utilizing my technical, design, and collaborative capabilities to make something greater than myself.
+                    </p>
+                </section>
             </div>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus quia debitis a veniam corporis quis corrupti consectetur ratione fuga libero. Incidunt reiciendis officia harum repellendus voluptas velit repellat. Qui, dolore.
-            </p>
+            <section class="about-page__section">
+                <div class="about-page__section-title">
+                    Education
+                </div>
+                <p class="about-page__paragraph">
+                    B.S. Computer Science: Game Design - University of California, Santa Cruz
+                </p>
+            </section>
+            <section class="about-page__section">
+                <div class="about-page__section-title">
+                    Technical Skills
+                </div>
+                <div class="about-page__skills">
+                    <div>
+                        <div class="about-page__skills-title">
+                            Engines
+                        </div>
+                    </div>
+                    <div>
+                        <div class="about-page__skills-title">
+                            Programming
+                        </div>
+                    </div>
+                    <div>
+                        <div class="about-page__skills-title">
+                            Art
+                        </div>
+                    </div>
+                    <div>
+                        <div class="about-page__skills-title">
+                            Audio
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="about-page__misc">
+                    <div class="about-page__section-title">
+                        Misc
+                    </div>
+                    <div class="about-page__section-subtitle">
+                        Side Quests:
+                    </div>
+                    <ul class="about-page__section-list">
+                        <li>
+                            Dark Souls
+                        </li>
+                        <li>
+                            Weightlifting
+                        </li>
+                        <li>
+                            Hardcore History podcast
+                        </li>
+                        <li>
+                            Drumming
+                        </li>
+                    </ul>
+                    <div class="about-page__section-subtitle">
+                        Travel Stats:
+                    </div>
+                    <ul class="about-page__section-list">
+                        <li>
+                            Kite surfed in Brazil
+                        </li>
+                        <li>
+                            Taught English in Spain
+                        </li>
+                        <li>
+                            Saw robot cat waitresses in Japan
+                        </li>
+                    </ul>
+                    <p class="about-page__paragraph">
+                        Currently Playing: WoW Classic, 7 Days to Die, Baldur's Gate 3
+                    </p>
+                </div>
+            </section>
         </main>
         <footer>
             <p>&#169; 2024 Barry Day</p>

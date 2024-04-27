@@ -1,0 +1,55 @@
+.about-page
+{
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    line-height: 1.5rem;
+    /* font-size: 1.3rem;
+    font-weight: 300; */
+}
+
+.about-page__section-wrapper
+{
+    display: flex;
+    column-gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.about-page__section
+{
+    margin-bottom: 4rem;
+}
+
+.about-page__portrait-wrapper img
+{
+    width: 24rem;
+}
+
+.about-page__section-title
+{
+    font-size: var(--font-size-big);
+    color: var(--color-4);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.about-page__section-list
+{
+    padding-left: 1.2rem;
+    list-style-type: square;
+}
+
+.about-page__skills
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.about-page__skills-title
+{
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+}
