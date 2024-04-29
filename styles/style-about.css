@@ -4,9 +4,22 @@
     margin-left: auto;
     margin-right: auto;
 
-    line-height: 1.5rem;
+
     /* font-size: 1.3rem;
     font-weight: 300; */
+}
+
+.about-page-mobile
+{
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
 }
 
 .about-page__section-wrapper
@@ -18,12 +31,25 @@
 
 .about-page__section
 {
+    line-height: 1.5rem;
     margin-bottom: 4rem;
+}
+
+.about-page__section p
+{
+    margin-bottom: 1rem;
+}
+
+.about-page__portrait-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
 }
 
 .about-page__portrait-wrapper img
 {
-    width: 24rem;
+    width: 20rem;
 }
 
 .about-page__section-title
@@ -31,7 +57,7 @@
     font-size: var(--font-size-big);
     color: var(--color-4);
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about-page__section-list
@@ -48,7 +74,7 @@
     margin-right: 2rem;
 }
 
-.about-page__skills-title
+.about-page__skills-subtitle
 {
     font-size: var(--font-size-medium);
     font-weight: 400;
