@@ -267,6 +267,15 @@
         display: flex;
     }
 
+    /* Index */
+
+    .game__btn
+    {
+        font-size: var(--font-size-medium);
+        width: 8rem;
+        height: 3rem
+    }
+
     /* About Page */
 
     .about-page-mobile
@@ -279,6 +288,12 @@
 
 @media (width <= 450px)
 {
+    /* .game
+    {
+        border-bottom: 0.1rem solid black;
+        margin-bottom: 0;
+    } */
+    
     .game__header
     {
         display: flex;
