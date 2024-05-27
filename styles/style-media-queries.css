@@ -96,6 +96,12 @@
         margin-top: 1rem;
     }
 
+    .game__btn--more
+    {
+        background-color: var(--color-4);
+        color: var(--color-1);
+    }
+
     /* Game Page */
 
     /* .game-page-mobile
