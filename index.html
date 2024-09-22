@@ -12,29 +12,27 @@
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
-            <div class="header__top">
-                <p class="header__name">BARRY DAY</p>
-                <p class="header__role">Game Programmer|Designer</p>
-            </div>
-            <nav class="header__bottom">
+            <nav class="header__left">
                 <div class="header__nav">
-                    <a class="header__nav-link header__nav-link--current" href="index.html">home</a>
-                    <div class="header__games" onclick="toggleGamesDropdown()">games
+                    <div class="header__games" onclick="toggleGamesDropdown()">projects
                         <div class="header__games-dropdown">
+                            <a class="header__nav-link" href="horror-game.html">Doghouse</a>
                             <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
-                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
                             <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
                             <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
                         </div>
                     </div>
-                    <a class="header__nav-link" href="https://drive.google.com/file/d/1mGSRJxdkBXXygRoFJmblougaWR1bGF-Y/view?usp=sharing" target="_blank">resume</a>
-                    <a class="header__nav-link" href="about.html">about</a>
+                    <a class="header__resume" href="https://drive.google.com/file/d/1mGSRJxdkBXXygRoFJmblougaWR1bGF-Y/view?usp=sharing" target="_blank">resume</a>
+                    <a class="header__about" href="about.html">about</a>
                 </div>
-                <div class="header__socials">
+                <!-- <div class="header__socials">
                     <a href="mailto:brday7@gmail.com" target="_blank">
                         <img src="media/icons/email-icon.svg">
                     </a>
@@ -47,8 +45,12 @@
                     <a href="https://scarybarry.itch.io/" target="_blank">
                         <img src="media/icons/itchio-icon.svg">
                     </a>
-                </div>
+                </div> -->
             </nav>
+            <div class="header__right">
+                <a class="header__name" href="index.html">BARRY DAY</a>
+                <p class="header__role">Game Developer</p>
+            </div>
         </header>
         <header class="header-mobile">
             <a href="index.html">
@@ -96,6 +98,50 @@
         </header>
         <main class="games">
             <section class="game">
+                <div class = "game__thumbnail-wrapper">
+                    <a href="doghouse.html">
+                        <img class="game__thumbnail" src="media/horror-game/horror-gif.gif">
+                    </a>
+                </div>
+                <div class="game__info">
+                    <header class="game__header">
+                        <a class="game__title" href="doghouse.html">
+                            Doghouse
+                        </a>
+                        <div class="game__date">
+                            2023 - Present
+                        </div>
+                    </header>
+                    <p class="game__summary">
+                        A first-person survival-horror game about a boy searching for his lost dog, built in Unreal Engine 5.
+                    </p>
+                    <!-- <div class="game__highlights-title">
+                        Highlights:
+                    </div> -->
+                    <ul class="game__highlights">
+                        <li>
+                            Built core gameplay systems with C++ and blueprints, including a first-person player controller with items/inventory, gun combat, a responsive HUD, and a dynamic day/night cycle
+                        </li>
+                        <li>
+                            Engineered a variety of enemy AIs that dynamically react to light using behavior trees
+                        </li>
+                        <li>
+                            Designed 3 levels, including blockouts, puzzle mechanics, navmeshes, and environmental storytelling
+                        </li>
+                        <li>
+                            Implemented custom PS1-style shaders and VFX
+                        </li>
+                    </ul>
+                    <div class="game__btns">
+                        <a href="doghouse.html">
+                            <button class="game__btn game__btn--more">
+                                more
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="game">
                 <a href="last-lunar-air.html">
                     <img class="game__thumbnail" src="media/thumbnails/last-lunar-air-thumbnail-2.gif">
                 </a>
@@ -105,15 +151,12 @@
                             Last Lunar Air
                         </a>
                         <div class="game__date">
-                            Unity | 2021 - 2024
+                            2021 - Present
                         </div>
                     </header>
                     <p class="game__summary">
                         A Gameboy-inspired side-scroller about skateboarding on the Moon, developed entirely solo.
                     </p>
-                    <div class="game__highlights-title">
-                        Code Highlights:
-                    </div>
                     <ul class="game__highlights">
                         <li>
                             Built a custom physics engine, including pixel-snapping and continuous collision detection
@@ -135,48 +178,6 @@
                             </button>
                         </a>
                         <a href="last-lunar-air.html">
-                            <button class="game__btn game__btn--more">
-                                more
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="game">
-                <a href="horror-game.html">
-                    <img class="game__thumbnail" src="media/horror-game/horror-gif.gif">
-                </a>
-                <div class="game__info">
-                    <header class="game__header">
-                        <a class="game__title" href="horror-game.html">
-                            N64 Horror Game
-                        </a>
-                        <div class="game__date">
-                            UE5 | 2023 - 2024
-                        </div>
-                    </header>
-                    <p class="game__summary">
-                        A first-person survival horror game about a boy searching for his lost dog, inspired by 90s creepypastas.
-                    </p>
-                    <div class="game__highlights-title">
-                        Code Highlights:
-                    </div>
-                    <ul class="game__highlights">
-                        <li>
-                            Designed a variety of enemy AIs that dynamically react to light
-                        </li>
-                        <li>
-                            Contributed to core player and game systems, including stealth, combat, and item management
-                        </li>
-                        <li>
-                            Built placeable enviornmental storytelling blueprints that interact with AI, lighting, and sfx
-                        </li>
-                        <li>
-                            Implemented custom PS1-style shaders and VFX
-                        </li>
-                    </ul>
-                    <div class="game__btns">
-                        <a href="horror-game.html">
                             <button class="game__btn game__btn--more">
                                 more
                             </button>
@@ -268,7 +269,7 @@
                         Last Lunar Air
                     </a>
                     <div class="game__date">
-                        Unity | 2023 - 2024
+                        Unity | 2023 - Present
                     </div>
                 </header>
                 <a href="last-lunar-air.html">

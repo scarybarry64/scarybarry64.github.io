@@ -3,19 +3,44 @@
 
 .header
 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 8rem;
     
-    font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    
+
+    justify-content: space-between;
+    
+
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    
+    background-color: #0D0D0D;
+
+    text-transform: uppercase;
+
+
+    /* font-family: 'Courier New', Courier, monospace;
     font-size: var(--font-size-header);
     font-weight: 100;
     text-transform: uppercase;
-    user-select: none;
+    user-select: none; */
 }
 
-.header__top
+.header__right
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+
+/* .header__right
 {
     display: flex;
     flex-direction: row;
@@ -25,38 +50,100 @@
     border-bottom: solid 1px;
     border-color: var(--color-border);
     width: 100%;
-}
+} */
 
 .header__name
 {
     display: flex;
-    justify-content: start;
-    margin-right: 2rem;
+    justify-content: end;
     color: var(--color-4);
-    font-weight: bold;
+    font-weight: 600;
+
+    font-size: 2.4rem;
 }
 
 .header__role
 {
     display: flex;
-    justify-content: start;
+    justify-content: end;
 }
 
-.header__bottom
+/* .header__left
 {
     display: flex;
     justify-content: space-between;
-}
+
+    width: 100%;
+} */
 
 
 .header__nav
 {
     display: flex;
     column-gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 
-.header__nav-link, .header__games
+/* .header__games, .header__resume, .header__about
+{
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+}
+
+.header__games
+{
+    color: #D64550;
+    border-bottom-color: #D64550;
+}
+
+.header__resume
+{
+    color: #50B4F2;
+    border-bottom-color: #50B4F2;
+}
+
+.header__about
+{
+    color: #09BC8A;
+    border-bottom-color: #09BC8A;
+} */
+
+.header__about
+{
+    position: relative;
+    transition: all 0.4s;
+}
+
+.header__about:hover
+{
+    color: var(--color-4);
+}
+
+.header__about:after
+{
+    content: '';
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    padding-bottom: 0.1rem;
+
+    background: var(--color-4);
+    opacity: 0;
+
+    transition: all 0.3s;
+    pointer-events: none;
+}
+
+.header__about:hover::after
+{
+    opacity: 1;
+}
+
+
+/* .header__nav-link, .header__games
 {
     text-wrap: nowrap;
     transition: all 300ms;
@@ -73,7 +160,7 @@
     font-weight: bold;
     text-decoration: underline 1px var(--color-2);
     text-underline-offset: 0.5rem;
-}
+} */
 
 .header__games
 {
@@ -98,7 +185,8 @@
 .header__socials
 {
     display: flex;
-    column-gap: 0.5rem;
+    justify-content: end;
+    column-gap: 0.7rem;
 }
 
 .header__socials img
