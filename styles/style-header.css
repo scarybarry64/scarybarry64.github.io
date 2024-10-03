@@ -16,7 +16,7 @@
     
 
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.7rem;
     padding-left: 16rem;
     padding-right: 16rem;
     
@@ -25,7 +25,6 @@
     border-bottom: 1px solid rgba(200, 200, 200, 0.3);
 
     text-transform: uppercase;
-
 
     /* font-family: 'Courier New', Courier, monospace;
     font-size: var(--font-size-header);
@@ -149,6 +148,100 @@
 .header__nav-link:hover::after
 {
     opacity: 1;
+}
+
+
+
+
+
+.header__project-link
+{
+    position: relative;
+    transition: all 0.4s;
+}
+
+.header__project-link:hover
+{
+    color: var(--color-4);
+}
+
+.header__project-link:after
+{
+    content: '';
+
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: -10px;
+    padding-bottom: 0.1rem;
+
+    background: var(--color-4);
+    opacity: 0;
+
+    transition: all 0.4s;
+    pointer-events: none;
+}
+
+.header__project-link:hover::after
+{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+.header__nav-projects-wrapper
+{
+    display: inline-block;
+
+    /* position: relative; */
+    cursor: pointer;
+}
+
+
+.dropdown
+{
+    display: none;
+
+    position: absolute;
+    list-style: none;
+    white-space: nowrap;
+
+    margin-bottom: 10px;
+    margin-left: 22px;
+    
+    z-index: 1;
+}
+
+.dropdown li
+{
+    margin-top: 20px;
+}
+
+.dropdown__box
+{
+    display: none;
+
+    position: absolute;
+    width: 308px;
+    height: 172px;
+    background-color: #181818;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+
+    margin-top: 11px;
+}
+
+.header__nav-projects-wrapper:hover .dropdown
+{
+    display: block;
+}
+
+.header__nav-projects-wrapper:hover .dropdown__box
+{
+    display: block;
 }
 
 
