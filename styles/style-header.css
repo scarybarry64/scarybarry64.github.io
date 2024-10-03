@@ -41,6 +41,8 @@
     white-space: nowrap;
     
     column-gap: 20px;
+
+    justify-content: center;
 }
 
 .header__right
@@ -49,8 +51,10 @@
     flex-direction: column;
     row-gap: 0.5rem;
 
-    justify-content: end;
-    padding-bottom: -20px;
+    justify-content: center;
+
+    /* justify-content: end;
+    padding-bottom: -20px; */
 }
 
 
@@ -85,6 +89,8 @@
     /* flex-direction: column;
     align-items: start; */
 
+    justify-content: center;
+    
     align-items: end;
 }
 
@@ -187,7 +193,7 @@
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -10px;
+    bottom: -8px;
     padding-bottom: 0.1rem;
 
     background: var(--color-4);
