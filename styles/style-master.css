@@ -67,6 +67,12 @@ body
 
 }
 
+button
+{
+    font-family: inherit;
+    font-size: inherit;
+}
+
 @keyframes test
 {
     from

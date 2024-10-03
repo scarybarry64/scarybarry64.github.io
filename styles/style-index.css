@@ -27,14 +27,12 @@
     flex-direction: column;
 
     overflow: auto;
-    
+
     /* max-width: 100%; */
     /* margin-left: auto;
     margin-right: auto; */
 
     /* background-color: #2b2b2b; */
-    
-    /* background-color: var(--color-1); */
 
     /* padding: 2rem; */
     /* border: 1px solid rgba(100, 100, 100, 0.1); */
@@ -51,24 +49,18 @@
 
 .game:nth-child(2n)
 {
-    margin-right: -1rem;
+    padding-right: -1rem;
 }
 
 .game:nth-child(2n+1)
 {
-    margin-left: -1rem;
+    padding-left: -1rem;
 }
 
-.game:nth-child(n + 3)
+.game:nth-child(n+3)
 {
     padding-top: 2rem;
     border-top: 1px solid rgba(200, 200, 200, 0.3);
-}
-
-.game__thumbnail-wrapper
-{
-    display: flex;
-    justify-content: center;
 }
 
 .game__thumbnail
@@ -77,10 +69,32 @@
     object-fit: contain;
 }
 
+.game:nth-child(2n) .game__thumbnail-wrapper
+{
+    display: flex;
+    justify-content: end;
+}
+
+.game:nth-child(2n+1) .game__thumbnail-wrapper
+{
+    display: flex;
+    justify-content: start;
+}
+
+
 .game__info
 {
     padding: 1rem;
     line-height: var(--line-height-paragraph);
+    height: 100%;
+    
+    transition: all 0.4s ease;
+}
+
+.game:hover .game__info
+{
+    color: var(--color-3);
+    background-color: var(--color-1);
 }
 
 .game__header
@@ -94,9 +108,16 @@
     border-color: var(--color-border);
 }
 
+.game__title-wrapper
+{
+    display: flex;
+    column-gap: 2rem;
+}
+
 .game__title
 {
     font-size: var(--font-size-big);
+    
     font-weight: 800;
     /* color: var(--color-4); */
     margin-bottom: 0;
@@ -132,31 +153,30 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    column-gap: 4rem;
+    column-gap: 2rem;
+    margin-right: 1rem;
 }
 
 .game__btn
 {
-    font-size: var(--font-size-small);
-    width: 5rem;
-    height: 2rem;
-    font-weight: 500;
-    margin-top: 40px;
-    box-shadow: none;
-    border-radius: 2rem;
-    border: var(--color-2) solid 1px;
+    font-size: var(--font-size-medium);
+    font-weight: 300;
     text-transform: uppercase;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .game__btn--play
 {
-    background-color: var(--color-4);
     color: var(--color-1);
+    background-color: var(--color-2);
 }
 
 .game__btn--more
 {
     background-color: var(--color-1);
+    border: 1px solid var(--color-2);
 }
 
 
