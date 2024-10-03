@@ -25,8 +25,6 @@
 
     border-bottom: 1px solid rgba(200, 200, 200, 0.3);
 
-    text-transform: uppercase;
-
 
     /* font-family: 'Courier New', Courier, monospace;
     font-size: var(--font-size-header);
@@ -40,9 +38,7 @@
     display: flex;
     white-space: nowrap;
     
-    column-gap: 20px;
-
-    justify-content: center;
+    column-gap: 15px;
 }
 
 .header__right
@@ -91,26 +87,14 @@
 
     justify-content: center;
     
-    align-items: end;
-}
 
-.header__name
-{
-    margin-top: -9px;
-    color: var(--color-4);
-    font-weight: 600;
-    font-size: 2.4rem;
-}
-
-.header__role
-{
-    margin-top: 7px;
 }
 
 .header__title
 {
     font-size: 1.7rem;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 
@@ -129,6 +113,9 @@
     justify-content: center;
     align-items: center;
     column-gap: 2rem;
+
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 
