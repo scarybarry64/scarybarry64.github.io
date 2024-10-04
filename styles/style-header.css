@@ -6,8 +6,8 @@
     
     position: fixed;
     top: 0;
-    left: var(--side-margin);
-    right: var(--side-margin);
+    left: var(--margin-sides-global);
+    right: var(--margin-sides-global);
 
     display: flex;
     
@@ -121,6 +121,7 @@
     align-items: center;
     column-gap: 2rem;
 
+    font-size: 1.1rem;
     font-weight: 300;
     text-transform: uppercase;
 }

@@ -4,7 +4,7 @@
 :root
 {
     
-    --side-margin: 8rem;
+    --margin-sides-global: 8rem;
     
     --time-transition: 0.4s;
     
@@ -32,7 +32,6 @@
 
     --background-color-primary-alphazero: #22232300;
     --accent-color-secondary: #222323FF;
-    --side-margin: 10rem;
 
     /* font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1; */
@@ -57,9 +56,6 @@
 
 body
 {
-    padding-left: var(--side-margin);
-    padding-right: var(--side-margin);
-
     color: var(--color-2);
     background-color: #181818;
     font-weight: 200;
