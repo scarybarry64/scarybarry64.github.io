@@ -14,6 +14,7 @@
 
     /* column-gap: 2rem; */
 
+    column-gap: 2rem;
 
     /* background-color: var(--color-1); */
 
@@ -47,15 +48,15 @@
     margin-bottom: 10rem; */
 }
 
-.game:nth-child(2n)
+/* .game:nth-child(2n) 
 {
-    padding-right: -1rem;
+    margin-right: -1rem;
 }
 
 .game:nth-child(2n+1)
 {
-    padding-left: -1rem;
-}
+    margin-left: -1rem;
+} */
 
 .game:nth-child(n+3)
 {
@@ -63,39 +64,71 @@
     border-top: 1px solid rgba(200, 200, 200, 0.3);
 }
 
-.game__thumbnail
+.game__thumbnail-wrapper
 {
-    min-width: 580px;
-    object-fit: contain;
+    /* display: flex; */
+    
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
 }
 
-.game:nth-child(2n) .game__thumbnail-wrapper
+.game__thumbnail
 {
-    display: flex;
-    justify-content: end;
+    /* min-width: 580px;
+    object-fit: contain; */
+
+    width: 100%;
+
+    object-fit: cover;
+}
+
+/* .game:nth-child(2n) .game__thumbnail-wrapper
+{
+    margin-left: 1rem;
 }
 
 .game:nth-child(2n+1) .game__thumbnail-wrapper
 {
-    display: flex;
-    justify-content: start;
-}
-
+    margin-right: 1rem;
+} */
 
 .game__info
 {
     padding: 1rem;
+
     line-height: var(--line-height-paragraph);
     height: 100%;
     
     transition: all 0.4s ease;
 }
 
+.game__info a
+{
+    transition: all 0.4s ease;
+}
+
 .game:hover .game__info
 {
-    color: var(--color-3);
+    color: var(--color-4);
     background-color: var(--color-1);
 }
+
+.game:hover .game__info a
+{
+    color: var(--color-4);
+}
+
+/* .game:nth-child(2n) .game__info
+{
+    padding-left: 1rem;
+}
+
+.game:nth-child(2n+1) .game__info
+{
+    padding-right: 1rem;
+} */
 
 .game__header
 {

@@ -49,22 +49,24 @@
 
 *
 {
-    color: var(--color-2);
-    text-decoration: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 body
 {
-    /* background-color: var(--color-1); */
-
-    background-color: #181818;
-
-    font-weight: 200;
     padding-left: var(--side-margin);
     padding-right: var(--side-margin);
 
+    color: var(--color-2);
+    background-color: #181818;
+    font-weight: 200;
+}
+
+a
+{
+    color: var(--color-2);
 }
 
 button
