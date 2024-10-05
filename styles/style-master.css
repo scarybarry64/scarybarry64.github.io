@@ -3,27 +3,27 @@
 
 :root
 {
-    --color-light: #B8C5C9;
-    --color-light-accent: #FAFAFF;
-    --color-dark: #181818;
-    --color-dark-accent: #1f1f1f;
-    --color-border: rgba(200, 200, 200, 0.3);
+    --color__light: #B8C5C9;
+    --color__light--accent: #FAFAFF;
+    --color__dark: #181818;
+    --color__dark--accent: #1f1f1f;
+    --color__border: rgba(200, 200, 200, 0.3);
 
     --margin-side: 8rem;
 
     --time-transition: 0.4s;
 
 
-    --width-game-page-overview-banner: 42vw;
+    --width__game-page-overview-banner: 42vw;
 
 
     --color-3: gray;
 
-    /* --color-light-accent: #D90467; */
-    /* --color-light-accent: #D64550; */
-    /* --color-light-accent: #FF4545; */
-    /* --color-light-accent: #45568DFF; */
-    /* --color-border: rgba(100, 100, 100, 0.534); */
+    /* --color__light--accent: #D90467; */
+    /* --color__light--accent: #D64550; */
+    /* --color__light--accent: #FF4545; */
+    /* --color__light--accent: #45568DFF; */
+    /* --color__border: rgba(100, 100, 100, 0.534); */
 
     --font-size-biggest: 1.75rem;
     --font-size-big: 1.5rem;
@@ -63,14 +63,14 @@
 
 body
 {
-    color: var(--color-light);
-    background-color: var(--color-dark);
+    color: var(--color__light);
+    background-color: var(--color__dark);
     font-weight: 200;
 }
 
 a
 {
-    color: var(--color-light);
+    color: var(--color__light);
 }
 
 button
@@ -118,7 +118,7 @@ button
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: var(--color-dark-accent);
+    background-color: var(--color__dark--accent);
     opacity: 0;
     pointer-events: none;
     transition: 0.5s ease-out;

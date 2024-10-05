@@ -19,7 +19,7 @@
 
     column-gap: 2rem;
 
-    /* background-color: var(--color-dark-accent); */
+    /* background-color: var(--color__dark--accent); */
 
     /* margin-left: auto;
     margin-right: auto; */
@@ -55,7 +55,7 @@
 .game:nth-child(n+3)
 {
     padding-top: 2rem;
-    border-top: 1px solid var(--color-border);
+    border-top: 1px solid var(--color__border);
 }
 
 .game__link-wrapper
@@ -87,18 +87,18 @@
 
 .game__info
 {
-    padding: 1rem;
     height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    row-gap: 0.5rem;
 
+    padding: 1.5rem 1rem 1rem 1rem;
+    
     line-height: var(--line-height-paragraph);
     
     transition: all 0.4s ease;
-
-    display: flex;
-
-    flex-direction: column;
-
-    flex-grow: 1;
 }
 
 .game__info a
@@ -108,13 +108,13 @@
 
 .game:hover .game__info
 {
-    color: var(--color-light-accent);
-    background-color: var(--color-dark-accent);
+    color: var(--color__light--accent);
+    background-color: var(--color__dark--accent);
 }
 
 .game:hover .game__info a
 {
-    color: var(--color-light-accent);
+    color: var(--color__light--accent);
 }
 
 /* .game:nth-child(2n) .game__info
@@ -135,7 +135,7 @@
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
 
-    border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color__border);
 }
 
 .game__title-wrapper
@@ -148,7 +148,7 @@
 {
     font-size: var(--font-size-big);
     font-weight: 800;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     
     margin-bottom: 0;
 }
@@ -156,19 +156,13 @@
 .game__date
 {
     font-size: var(--font-size-medium);
+    font-weight: 300;
 }
 
 .game__summary
 {
     margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.game__summary a
-{
-    color: var(--color-light-accent);
     font-weight: 300;
-    text-decoration: underline;
 }
 
 .game__highlights
@@ -198,14 +192,14 @@
 
 .game__btn--play
 {
-    color: var(--color-dark-accent);
-    background-color: var(--color-light);
+    color: var(--color__dark--accent);
+    background-color: var(--color__light);
 }
 
 .game__btn--more
 {
-    background-color: var(--color-dark-accent);
-    border: 1px solid var(--color-light);
+    background-color: var(--color__dark--accent);
+    border: 1px solid var(--color__light);
 }
 
 

@@ -64,7 +64,7 @@
 
 .header__left:hover .header__title
 {
-    color: var(--color-light-accent);
+    color: var(--color__light--accent);
 }
 
 
@@ -88,8 +88,8 @@
     padding-left: 8px;
     padding-right: 8px;
 
-    color: var(--color-dark-accent);
-    background-color: var(--color-light);
+    color: var(--color__dark--accent);
+    background-color: var(--color__light);
     text-transform: uppercase;
     border-radius: 5px;
 
@@ -98,7 +98,7 @@
 
 .header__contact-btn:hover
 {
-    background-color: var(--color-light-accent);
+    background-color: var(--color__light--accent);
 }
 
 /* .header__games, .header__resume, .header__about
@@ -133,7 +133,7 @@
 
 .header__nav-link:hover
 {
-    color: var(--color-light-accent);
+    color: var(--color__light--accent);
 }
 
 .header__nav-link:after
@@ -146,7 +146,7 @@
     bottom: -8px;
     padding-bottom: 0.1rem;
 
-    background: var(--color-light-accent);
+    background: var(--color__light--accent);
     opacity: 0;
 
     transition: all var(--time-transition) ease;
@@ -170,7 +170,7 @@
 
 .header__project-link:hover
 {
-    color: var(--color-light-accent);
+    color: var(--color__light--accent);
 }
 
 .header__project-link:after
@@ -183,7 +183,7 @@
     left: -10px;
     padding-bottom: 0.1rem;
 
-    background: var(--color-light-accent);
+    background: var(--color__light--accent);
     opacity: 0;
 
     transition: all 0.4s;
@@ -268,7 +268,7 @@
 {
     color: rgb(78, 78, 78);
     font-weight: bold;
-    text-decoration: underline 1px var(--color-light);
+    text-decoration: underline 1px var(--color__light);
     text-underline-offset: 0.5rem;
 } */
 
@@ -336,7 +336,7 @@
 .header__role--overline
 {
     border-top: solid 1px;
-    border-color: var(--color-border);
+    border-color: var(--color__border);
 }
 
 .nav-sidebar
@@ -418,7 +418,7 @@
     padding-bottom: 2rem;
     row-gap: 1rem;
     border-bottom: solid 1px;
-    border-color: var(--color-border);
+    border-color: var(--color__border);
 }
 
 .nav-sidebar__socials

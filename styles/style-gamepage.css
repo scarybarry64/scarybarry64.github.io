@@ -76,7 +76,7 @@
     top: 0;
     bottom: 0;
 
-    left: calc(100vw - var(--width-game-page-overview-banner));
+    left: calc(100vw - var(--width__game-page-overview-banner));
     right: var(--margin-side);
 
     display: flex;
@@ -87,8 +87,8 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
-    background-color: var(--color-dark-accent);
-    border-left: 1px solid var(--color-border);
+    background-color: var(--color__dark--accent);
+    border-left: 1px solid var(--color__border);
 }
 
 .game-page__secondary
@@ -100,7 +100,7 @@
 
     margin-top: 6rem;
     margin-left: var(--margin-side);
-    margin-right: var(--width-game-page-overview-banner);
+    margin-right: var(--width__game-page-overview-banner);
     padding-right: 2rem;
 
     /* margin-right: var(--margin-side);
@@ -127,28 +127,43 @@
 }
 
 .game-page__section-title-wrapper
-{
+{   
     display: flex;
-    justify-content: center;
+    justify-content: start;
+
+    padding-bottom: 0.5rem;
+
+    border-bottom: 1px solid var(--color__border);
 }
 
 .game-page__section-title
 {
     font-size: var(--font-size-big);
-    font-weight: 300;
+    font-weight: 800;
 }
 
 .game-page__section-subtitle
 {
     font-size: 1.2rem;
-    font-weight: 300;
+    font-weight: inherit;
     margin-bottom: -0.7rem;
+}
+
+.game-page__overview-paragraph em
+{
+    font-weight: inherit;
 }
 
 .game-page__overview-paragraph a
 {
-    /* font-weight: 300; */
     text-decoration: underline;
+
+    transition: all var(--time-transition) ease;
+}
+
+.game-page__overview-paragraph a:hover
+{
+    color: var(--color__light--accent);
 }
 
 .game-page__play-btn-wrapper
@@ -161,14 +176,18 @@
 
 .game-page__play-btn
 {
+    display: flex;
+    justify-content: center;
+    column-gap: 4px;
+    
     padding: 10px 40px 10px 40px;
 
-    font-size: var(--font-size-big);
-    font-weight: 700;
+    font-size: var(--font-size-small);
+    font-weight: 800;
     text-transform: uppercase;
     color: rgba(31, 31, 31, 0.9);
 
-    background-color: var(--color-light);
+    background-color: var(--color__light);
     border-radius: 5px;
 
     transition: all var(--time-transition) ease;
@@ -176,7 +195,15 @@
 
 .game-page__play-btn:hover
 {
-    background-color: var(--color-light-accent);
+    background-color: var(--color__light--accent);
+}
+
+
+.game-page__play-btn div
+{
+    scale: 90%;
+
+    padding-top: -1px;
 }
 
 
