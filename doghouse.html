@@ -8,11 +8,14 @@
         <link rel="stylesheet" href="styles/style-header.css">
         <link rel="stylesheet" href="styles/style-gamepage.css">
         <link rel="stylesheet" href="styles/style-media-queries.css">
-        <link rel="preconnect" href="https://rsms.me/">
+        <!-- <link rel="preconnect" href="https://rsms.me/">
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
@@ -75,37 +78,41 @@
             </section>
         </header>
         <main class="game-page">
-            <div class="game-page__title">Doghouse</div>
-            <section class="game-page__section">
-                <div class="game-page__overview">
-                    <div class="game-page__section-title">Overview</div>
-                    <p class="game-page__overview-paragraph">
-                        <i>A boy searches for his lost dog.</i>
-                    </p>
-                    <p class="game-page__overview-paragraph">
-                        A first-person survival horror game inspired by late 90s consoles, when the limitations of 3D birthed the best and scariest games from our childhoods.
-                    </p>
-                    <p class="game-page__overview-paragraph">
-                        This game is being co-created with <a href="https://lvien.github.io/" target="_blank">Andrew Vien</a>. It's our first large project in Unreal Engine 5, serving as a workshop of ideas and interesting mechanics as we learn the engine. In particular, we’ve designed enemies that dynamically react to light, as well as a system for environmental storytelling. A Steam release is scheduled for early 2025. 
-                    </p>
-                    <div class="game-page__overview-specs">
-                        <p><b>Genre: </b>First-Person Survival Horror</p>
-                        <p><b>Team Size: </b>2</p>
-                        <p><b>Tools Used: </b>UE5, C++/Blueprints, Blender, Reaper</p>
-                        <p><b>Status: </b> In Development</p>
-                    </div>
+            <section class="game-page__overview">
+                <h1 class="game-page__title">doghouse</h1>
+                <p class="game-page__overview-paragraph">
+                    <i>A boy searches for his lost dog.</i>
+                </p>
+                <p class="game-page__overview-paragraph">
+                    A first-person survival horror game inspired by late 90s consoles, when the limitations of 3D birthed the best and scariest games from our childhoods.
+                </p>
+                <p class="game-page__overview-paragraph">
+                    This game is being co-created with <a href="https://lvien.github.io/" target="_blank">Andrew Vien</a>. It's our first large project in Unreal Engine 5, serving as a workshop of ideas and interesting mechanics as we learn the engine. In particular, we’ve designed enemies that dynamically react to light, as well as a system for environmental storytelling. A Steam release is scheduled for early 2025. 
+                </p>
+                <div class="game-page__overview-specs">
+                    <p><b>Genre: </b>First-Person Survival Horror</p>
+                    <p><b>Team Size: </b>2</p>
+                    <p><b>Tools Used: </b>UE5, C++/Blueprints, Blender, Reaper</p>
+                    <p><b>Status: </b> In Development</p>
                 </div>
-                <div class="game-page__pic-wrapper">
-                    <iframe class="game-page__video" src="https://www.youtube.com/embed/jUYjxKcaYoY?si=vHIAJuOzusQzaD2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="game-page__play-btn-wrapper">
+                    <a class="game-page__play-btn" href="index.html" target="_blank">play</a>
                 </div>
             </section>
-            <section class="game-page__section">
-                <div class="game-page__pic-wrapper">
-                    <img class="game-page__pic-2" src="media/horror-game/horror-gif.gif">
-                </div>
+            <section class="game-page__secondary">
+                <section class="game-page__media--primary">
+                    <div class="game-page__pic-wrapper">
+                        <iframe class="game-page__video" src="https://www.youtube.com/embed/jUYjxKcaYoY?si=vHIAJuOzusQzaD2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <!-- <div class="game-page__pic-wrapper">
+                        <img class="game-page__pic-2" src="media/horror-game/horror-gif.gif">
+                    </div> -->
+                </section>
                 <div class="game-page__respon">
-                    <div class="game-page__section-title">Responsibilities and Achievements</div>
-                    <div class="game-page__section-subtitle">Programming and AI</div>
+                    <div class="game-page__section-title-wrapper">
+                        <h2 class="game-page__section-title">Roles and Responsibilities</h2>
+                    </div>
+                    <h3 class="game-page__section-subtitle">Programming and AI</h3>
                     <ul class="game-page__respon-list">
                         <li>
                             Designed a variety of enemy AIs that dynamically react to light – both static and player-caused – using behavior trees and environmental query systems
@@ -114,7 +121,7 @@
                             Built a system for environmental storytelling, using C++ to create placeable blueprints that interact with other systems such as lighting, AI, and SFX
                         </li>
                     </ul>
-                    <div class="game-page__section-subtitle">Level Design</div>
+                    <h3 class="game-page__section-subtitle">Level Design</h3>
                     <ul class="game-page__respon-list">
                         <li>
                             Designed, greyboxed, and implemented the starting level
@@ -130,14 +137,14 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section class="game-page__screenshots">
-                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-1.png">
-                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-2.png">
-                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-3.png">
-                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-4.png">
-                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-5.png">
-                <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-6.png">
+                <section class="game-page__media--secondary">
+                    <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-1.png">
+                    <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-2.png">
+                    <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-3.png">
+                    <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-4.png">
+                    <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-5.png">
+                    <img class="game-page__pic-screenshot" src="media/horror-game/horror-pic-6.png">
+                </section>
             </section>
         </main>
         <main class="game-page-mobile">

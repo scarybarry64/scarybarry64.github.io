@@ -16,6 +16,8 @@
     
     background-color: #181818;
     border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+
+    z-index: 1;
 }
 
 .header__left
@@ -57,7 +59,7 @@
     font-weight: 800;
     text-transform: uppercase;
 
-    transition: all var(--time-transition) ease ;
+    transition: all var(--time-transition) ease;
 }
 
 .header__left:hover .header__title

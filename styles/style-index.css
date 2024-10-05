@@ -9,8 +9,8 @@
     justify-content: space-between;
     
     margin-top: 6rem;
-    padding-left: var(--margin-sides-global);
-    padding-right: var(--margin-sides-global);
+    margin-left: var(--margin-sides-global);
+    margin-right: var(--margin-sides-global);
 
     /* padding-left: 4rem;
     padding-right: 4rem; */
