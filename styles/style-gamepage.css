@@ -58,7 +58,7 @@
     text-transform: uppercase;
 }
 
-.game-page__overview
+.game-page__overview-banner
 {
     /* display: flex;
     flex-direction: column;
@@ -68,9 +68,15 @@
     padding-left: 4rem; */
 
     position: fixed;
-    top: 0;
+    /* top: 0;
     bottom: 0;
     left: 55rem;
+    right: var(--margin-side); */
+
+    top: 0;
+    bottom: 0;
+
+    left: calc(100vw - var(--width-game-page-overview-banner));
     right: var(--margin-side);
 
     display: flex;
@@ -94,8 +100,11 @@
 
     margin-top: 6rem;
     margin-left: var(--margin-side);
-    margin-right: var(--margin-side);
-    padding-right: 35rem;
+    margin-right: var(--width-game-page-overview-banner);
+    padding-right: 2rem;
+
+    /* margin-right: var(--margin-side);
+    padding-right: 35rem; */
 }
 
 .game-page__overview-specs
