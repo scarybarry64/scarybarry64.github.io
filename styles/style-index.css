@@ -9,8 +9,8 @@
     justify-content: space-between;
     
     margin-top: 6rem;
-    margin-left: var(--margin-sides-global);
-    margin-right: var(--margin-sides-global);
+    margin-left: var(--margin-side);
+    margin-right: var(--margin-side);
 
     /* padding-left: 4rem;
     padding-right: 4rem; */
@@ -19,7 +19,7 @@
 
     column-gap: 2rem;
 
-    /* background-color: var(--color-1); */
+    /* background-color: var(--color-dark-accent); */
 
     /* margin-left: auto;
     margin-right: auto; */
@@ -55,7 +55,7 @@
 .game:nth-child(n+3)
 {
     padding-top: 2rem;
-    border-top: 1px solid rgba(200, 200, 200, 0.3);
+    border-top: 1px solid var(--color-border);
 }
 
 .game__link-wrapper
@@ -108,13 +108,13 @@
 
 .game:hover .game__info
 {
-    color: var(--color-4);
-    background-color: var(--color-1);
+    color: var(--color-light-accent);
+    background-color: var(--color-dark-accent);
 }
 
 .game:hover .game__info a
 {
-    color: var(--color-4);
+    color: var(--color-light-accent);
 }
 
 /* .game:nth-child(2n) .game__info
@@ -130,12 +130,12 @@
 .game__header
 {
     display: flex;
-
     justify-content: space-between;
+
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 1px solid;
-    border-color: var(--color-border);
+
+    border-bottom: 1px solid var(--color-border);
 }
 
 .game__title-wrapper
@@ -147,11 +147,10 @@
 .game__title
 {
     font-size: var(--font-size-big);
-    
     font-weight: 800;
-    /* color: var(--color-4); */
-    margin-bottom: 0;
     text-transform: uppercase;
+    
+    margin-bottom: 0;
 }
 
 .game__date
@@ -167,7 +166,7 @@
 
 .game__summary a
 {
-    color: var(--color-4);
+    color: var(--color-light-accent);
     font-weight: 300;
     text-decoration: underline;
 }
@@ -199,14 +198,14 @@
 
 .game__btn--play
 {
-    color: var(--color-1);
-    background-color: var(--color-2);
+    color: var(--color-dark-accent);
+    background-color: var(--color-light);
 }
 
 .game__btn--more
 {
-    background-color: var(--color-1);
-    border: 1px solid var(--color-2);
+    background-color: var(--color-dark-accent);
+    border: 1px solid var(--color-light);
 }
 
 

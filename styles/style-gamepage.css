@@ -54,7 +54,7 @@
     padding-bottom: 1rem;
 
     font-size: var(--font-size-biggest);
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
@@ -71,7 +71,7 @@
     top: 0;
     bottom: 0;
     left: 55rem;
-    right: var(--margin-sides-global);
+    right: var(--margin-side);
 
     display: flex;
     flex-direction: column;
@@ -81,8 +81,8 @@
     padding-left: 2rem;
     padding-right: 2rem;
 
-    background-color: var(--color-1);
-    border-left: 1px solid rgba(200, 200, 200, 0.3);
+    background-color: var(--color-dark-accent);
+    border-left: 1px solid var(--color-border);
 }
 
 .game-page__secondary
@@ -93,8 +93,8 @@
     row-gap: 1rem;
 
     margin-top: 6rem;
-    margin-left: var(--margin-sides-global);
-    margin-right: var(--margin-sides-global);
+    margin-left: var(--margin-side);
+    margin-right: var(--margin-side);
     padding-right: 35rem;
 }
 
@@ -115,7 +115,6 @@
 .game-page__respon-list
 {
     padding-left: 1.2rem;
-    list-style-type: square;
 }
 
 .game-page__section-title-wrapper
@@ -160,7 +159,7 @@
     text-transform: uppercase;
     color: rgba(31, 31, 31, 0.9);
 
-    background-color: var(--color-2);
+    background-color: var(--color-light);
     border-radius: 5px;
 
     transition: all var(--time-transition) ease;
@@ -168,25 +167,60 @@
 
 .game-page__play-btn:hover
 {
-    background-color: var(--color-4);
+    background-color: var(--color-light-accent);
 }
+
+
+.game-page__media--primary
+{
+    display: flex;
+    flex-direction: column;
+
+    /* position: relative;
+    width: 100%;
+    height: 100%; */
+}
+
+
+.game-page__media--secondary
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.game-page__video-wrapper
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.game-page__video
+{
+    aspect-ratio: 16 / 9;
+}
+
+.game-page__pic-screenshot
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 /************************************************/
 /* Media */
 
-.game-page__screenshots
-{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 1rem;
-    column-gap: 1rem;
-}
 
-.game-page__pic-wrapper
+
+/* .game-page__pic-wrapper
 {
     display: flex;
     justify-content: start;
-}
+} */
 
 .game-page__pic-1
 {
@@ -198,17 +232,7 @@
     width: 30rem;
 }
 
-.game-page__video
-{
-    aspect-ratio: 16 / 9;
-    width: 40rem;
-}
 
-.game-page__pic-screenshot
-{
-    width: 100%;
-    height: 100%;
-}
 
 /* OLD */
 

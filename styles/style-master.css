@@ -3,21 +3,27 @@
 
 :root
 {
-    
-    --margin-sides-global: 8rem;
-    
+    --color-light: #B8C5C9;
+    --color-light-accent: #FAFAFF;
+    --color-dark: #181818;
+    --color-dark-accent: #1f1f1f;
+    --color-border: rgba(200, 200, 200, 0.3);
+
+    --margin-side: 8rem;
+
     --time-transition: 0.4s;
-    
-    --color-1: #1f1f1f;
-    /* --color-1: #0B1416; */
-    --color-2: #B8C5C9;
+
+
+    /* --width-game-page-overview-banner:  */
+
+
     --color-3: gray;
-    --color-4: #FAFAFF;
-    /* --color-4: #D90467; */
-    /* --color-4: #D64550; */
-    /* --color-4: #FF4545; */
-    /* --color-4: #45568DFF; */
-    --color-border: rgba(100, 100, 100, 0.534);
+
+    /* --color-light-accent: #D90467; */
+    /* --color-light-accent: #D64550; */
+    /* --color-light-accent: #FF4545; */
+    /* --color-light-accent: #45568DFF; */
+    /* --color-border: rgba(100, 100, 100, 0.534); */
 
     --font-size-biggest: 1.75rem;
     --font-size-big: 1.5rem;
@@ -51,19 +57,20 @@
 {
     margin: 0;
     padding: 0;
+
     text-decoration: none;
 }
 
 body
 {
-    color: var(--color-2);
-    background-color: #181818;
+    color: var(--color-light);
+    background-color: var(--color-dark);
     font-weight: 200;
 }
 
 a
 {
-    color: var(--color-2);
+    color: var(--color-light);
 }
 
 button
@@ -111,7 +118,7 @@ button
     left: 0;
     right: 0;
     z-index: 1;
-    background-color: var(--color-1);
+    background-color: var(--color-dark-accent);
     opacity: 0;
     pointer-events: none;
     transition: 0.5s ease-out;

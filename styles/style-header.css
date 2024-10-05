@@ -5,8 +5,8 @@
 {
     position: fixed;
     top: 0;
-    left: var(--margin-sides-global);
-    right: var(--margin-sides-global);
+    left: var(--margin-side);
+    right: var(--margin-side);
 
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@
 
 .header__left:hover .header__title
 {
-    color: var(--color-4);
+    color: var(--color-light-accent);
 }
 
 
@@ -88,8 +88,8 @@
     padding-left: 8px;
     padding-right: 8px;
 
-    color: var(--color-1);
-    background-color: var(--color-2);
+    color: var(--color-dark-accent);
+    background-color: var(--color-light);
     text-transform: uppercase;
     border-radius: 5px;
 
@@ -98,7 +98,7 @@
 
 .header__contact-btn:hover
 {
-    background-color: var(--color-4);
+    background-color: var(--color-light-accent);
 }
 
 /* .header__games, .header__resume, .header__about
@@ -133,7 +133,7 @@
 
 .header__nav-link:hover
 {
-    color: var(--color-4);
+    color: var(--color-light-accent);
 }
 
 .header__nav-link:after
@@ -146,7 +146,7 @@
     bottom: -8px;
     padding-bottom: 0.1rem;
 
-    background: var(--color-4);
+    background: var(--color-light-accent);
     opacity: 0;
 
     transition: all var(--time-transition) ease;
@@ -170,7 +170,7 @@
 
 .header__project-link:hover
 {
-    color: var(--color-4);
+    color: var(--color-light-accent);
 }
 
 .header__project-link:after
@@ -183,7 +183,7 @@
     left: -10px;
     padding-bottom: 0.1rem;
 
-    background: var(--color-4);
+    background: var(--color-light-accent);
     opacity: 0;
 
     transition: all 0.4s;
@@ -268,7 +268,7 @@
 {
     color: rgb(78, 78, 78);
     font-weight: bold;
-    text-decoration: underline 1px var(--color-2);
+    text-decoration: underline 1px var(--color-light);
     text-underline-offset: 0.5rem;
 } */
 

@@ -98,8 +98,8 @@
 
     .game__btn--more
     {
-        background-color: var(--color-4);
-        color: var(--color-1);
+        background-color: var(--color-light-accent);
+        color: var(--color-dark-accent);
     }
 
     /* Game Page */

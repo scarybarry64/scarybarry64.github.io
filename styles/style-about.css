@@ -55,7 +55,7 @@
 .about-page__section-title
 {
     font-size: var(--font-size-big);
-    color: var(--color-4);
+    color: var(--color-light-accent);
     font-weight: 400;
     margin-bottom: 2rem;
 }
