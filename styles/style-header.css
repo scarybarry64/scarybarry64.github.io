@@ -7,18 +7,23 @@
     top: 0;
     left: var(--margin-side);
     right: var(--margin-side);
+}
 
+
+.header__sub-wrapper
+{
     display: flex;
     justify-content: space-between;
-    
+
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    
+
     background-color: #181818;
-    border-bottom: 1px solid rgba(200, 200, 200, 0.3);
+    border-bottom: 1px solid var(--color__border);
 
     z-index: 1;
 }
+
 
 .header__left
 {
@@ -46,15 +51,11 @@
     align-items: center;
 }
 
-.header__hero-portrait-wrapper img
-{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-
 .header__title
 {
+    display: flex;
+    align-items: center;
+    
     font-size: 1.7rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -101,41 +102,70 @@
     background-color: var(--color__light--accent);
 }
 
+.hamburger-nav
+{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-nav input
+{
+    appearance: none;
+}
+
+.hamburger-icon
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span
+{
+    width: 100%;
+    height: 2px;
+
+    background-color: var(--color__light);
+
+    transition: all 0.3 ease-in-out;
+}
 
 .nav-sidebar
 {
     position: fixed;
     top: 0;
-    bottom: calc(100vh - 2 * var(--margin-top));
+    bottom: calc(100vh - 1.5 * var(--margin-top));
     left: 0;
     right: 0;
-
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 
+    padding-top: var(--margin-top);
+    padding-bottom: 1rem;
     padding-left: var(--margin-side);
     padding-right: var(--margin-side);
 
+    font-size: var(--font-size-medium);
+    font-weight: 300;
+    text-transform: uppercase;
 
-    padding-top: 20%;
-    padding-bottom: 1rem;
+    background-color: var(--color__dark);
 
-    background-color: var(--color__dark--accent);
     z-index: -1;
-
-    /* translate: 100%; */
     translate: 0 -100%;
-    transition: translate 400ms ease-in-out;
+
+    transition: translate var(--time-transition) ease-in-out;
 }
 
 .hamburger-nav:has(input:checked) + .nav-sidebar
 {
     translate: 0 0;
 }
-
-
 
 
 /* .header__games, .header__resume, .header__about
@@ -407,32 +437,6 @@
 {
     translate: 0;
 } */
-
-.hamburger-nav input
-{
-    appearance: none;
-}
-
-.hamburger-icon
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-    margin-top: -0.5rem;
-}
-
-.hamburger-icon span
-{
-    width: 100%;
-    height: 2px;
-
-    background-color: var(--color__light);
-
-    transition: all 0.3 ease-in-out;
-}
 
 .nav-sidebar__links
 {
