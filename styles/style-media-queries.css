@@ -9,16 +9,23 @@
         font-size: 1.2rem;
     } */
 
-    .header__socials img
+    /* .header__socials img
     {
         width: 1.6rem;
-    }
+    } */
 }
 
 /*************************************************************************************************/
 
 @media (width > 950px)
 {
+    .nav-sidebar
+    {
+        display: none;
+    }
+    
+    
+    
     /* General */
     
     /* body
@@ -36,14 +43,22 @@
 
     /* Index */
 
-    .games-mobile
+    /* .games-mobile
     {
         display: none;
-    }
+    } */
 
     /* Game Page */
 
-    .game-page-mobile
+    /* .game-page-mobile
+    {
+        display: none;
+    } */
+}
+
+@media (width > 900px)
+{
+    .hamburger-nav
     {
         display: none;
     }
@@ -53,6 +68,22 @@
 
 @media (width <= 950px)
 {
+    
+    .games
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .game__thumbnail-wrapper img
+    {
+        max-width: calc(100vw - 2 * var(--margin-side));
+    }
+    
+    
+
+
+
     /* General */
     
     /* body
@@ -63,19 +94,14 @@
 
     /* Header */
 
-    .header__role-short
+    /* .header__role-short
     {
         display: none;
-    }
+    } */
 
     /* Index */
 
-    .games
-    {
-        display: none;
-    }
-
-    .games-mobile
+    /* .games-mobile
     {
         display: block;
     }
@@ -83,7 +109,7 @@
     .game
     {
         flex-direction: column;
-    }
+    } */
 
     /* .game__thumbnail
     {
@@ -91,7 +117,7 @@
         height: 100%;
     } */
 
-    .game__btns
+    /* .game__btns
     {
         margin-top: 1rem;
     }
@@ -100,7 +126,7 @@
     {
         background-color: var(--color__light--accent);
         color: var(--color__dark--accent);
-    }
+    } */
 
     /* Game Page */
 
@@ -111,13 +137,42 @@
     } */
 }
 
+@media (550px < width <= 700px)
+{
+    :root
+    {
+        --margin-side: 2rem;
+    }
+}
+
+
+
+@media (width <= 550px)
+{
+    :root
+    {
+        --margin-side: 1rem;
+    }
+}
+
+
+
 /*************************************************************************************************/
 
 @media (width <= 900px)
 {
+    
+    .header__nav
+    {
+        display: none;
+    }
+    
+    
+    
+    
     /* Game Page */
 
-    .game-page
+    /* .game-page
     {
         display: none;
     }
@@ -164,12 +219,11 @@
         height: 100%;
     }
 
-    /* idk, is this ok? */
     #IBW-logo--lower
     {
         width: 80%;
         margin-top: 3rem;
-    }
+    } */
 
     /* #IBW-cards, #IBW-rules-1, #IBW-rules-2
     {
@@ -179,7 +233,7 @@
 
     /* About Page */
 
-    .about-page
+    /* .about-page
     {
         display: none;
     }
@@ -187,7 +241,7 @@
     .about-page-mobile
     {
         display: flex;
-    }
+    } */
 }
 
 /*************************************************************************************************/
@@ -206,10 +260,10 @@
 {
     /* Header */
     
-    .header__socials img
+    /* .header__socials img
     {
         width: 2rem;
-    }
+    } */
 }
 
 /*************************************************************************************************/
@@ -218,17 +272,17 @@
 {
     /* Game Page */
 
-    .game-page-mobile
+    /* .game-page-mobile
     {
         margin-top: -6rem;
-    }
+    } */
 
     /* About Page */
 
-    .about-page-mobile
+    /* .about-page-mobile
     {
         margin-top: -6rem;
-    }
+    } */
 }
 
 /*************************************************************************************************/
@@ -237,27 +291,28 @@
 {
     /* Header */
     
-    .header-mobile
+    /* .header-mobile
     {
         display: none;
-    }
+    } */
 }
 
 /*************************************************************************************************/
 
 @media (width <= 700px)
 {
+    
     /* General */
 
-    body
+    /* body
     {
         padding-left: 2rem;
         padding-right: 2rem;
-    }
+    } */
     
     /* Header */
     
-    .header
+    /* .header
     {
         display: none;
     }
@@ -265,24 +320,25 @@
     .header-mobile
     {
         display: flex;
-    }
+    } */
 
     /* Index */
 
-    .game__btn
+    /* .game__btn
     {
         font-size: var(--font-size-medium);
         width: 8rem;
         height: 3rem
-    }
+    } */
 
     /* About Page */
 
-    .about-page-mobile
+    /* .about-page-mobile
     {
         max-width: 28rem;
-    }
+    } */
 }
+
 
 /*************************************************************************************************/
 
@@ -294,7 +350,7 @@
         margin-bottom: 0;
     } */
     
-    .game__header
+    /* .game__header
     {
         display: flex;
         flex-direction: column;
@@ -305,7 +361,7 @@
     {
         font-size: var(--font-size-small);
         margin-top: 0.5rem;
-    }
+    } */
 }
 
 /*************************************************************************************************/
@@ -314,10 +370,10 @@
 {
     /* About Page */
 
-    .about-page__portrait-wrapper img
+    /* .about-page__portrait-wrapper img
     {
         width: 100%;
-    }
+    } */
 }
 
 /*************************************************************************************************/
@@ -326,7 +382,7 @@
 {
     /* Header */
     
-    .header-mobile, .nav-sidebar__links
+    /* .header-mobile, .nav-sidebar__links
     {
         font-size: calc(var(--font-size-small) * 1.1);
     }
@@ -334,5 +390,5 @@
     .nav-sidebar__socials img
     {
         width: 2.2rem;
-    }
+    } */
 }
