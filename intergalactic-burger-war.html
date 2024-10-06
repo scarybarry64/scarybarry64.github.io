@@ -8,47 +8,25 @@
         <link rel="stylesheet" href="styles/style-header.css">
         <link rel="stylesheet" href="styles/style-gamepage.css">
         <link rel="stylesheet" href="styles/style-media-queries.css">
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
-            <div class="header__top">
-                <p class="header__name">BARRY DAY</p>
-                <p class="header__role">Game Programmer|Designer</p>
+            <a class="header__left" href="index.html">
+                <div class="header__hero-portrait-wrapper">
+                    <img src="media/portraits/hero-portrait.svg">
+                </div>
+                <p class="header__title">scarybarry.dev</p>
+            </a>
+            <div class="header__right">
+                <nav class="header__nav">
+                    <a class="header__nav-link" class="header__nav-resume" href="https://drive.google.com/file/d/1mGSRJxdkBXXygRoFJmblougaWR1bGF-Y/view?usp=sharing" target="_blank">resume</a>
+                    <a class="header__nav-link" class="header__nav-about" href="about.html">about</a>
+                    <a class="header__contact-btn" href="mailto:brday7@gmail.com" target="_blank">contact</a>
+                </nav>
             </div>
-            <nav class="header__bottom">
-                <div class="header__nav">
-                    <a class="header__nav-link" href="index.html">home</a>
-                    <div class="header__games header__nav-link--current" onclick="toggleGamesDropdown()">games
-                        <div class="header__games-dropdown">
-                            <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
-                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
-                            <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
-                            <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
-                        </div>
-                    </div>
-                    <a class="header__nav-link" href="https://drive.google.com/file/d/1mGSRJxdkBXXygRoFJmblougaWR1bGF-Y/view?usp=sharing" target="_blank">resume</a>
-                    <a class="header__nav-link" href="about.html">about</a>
-                </div>
-                <div class="header__socials">
-                    <a href="mailto:brday7@gmail.com" target="_blank">
-                        <img src="media/icons/email-icon.svg">
-                    </a>
-                    <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
-                        <img src="media/icons/linkedin-icon.svg">
-                    </a>
-                    <a href="https://github.com/scarybarry64" target="_blank">
-                        <img src="media/icons/github-icon.svg">
-                    </a>
-                    <a href="https://scarybarry.itch.io/" target="_blank">
-                        <img src="media/icons/itchio-icon.svg">
-                    </a>
-                </div>
-            </nav>
         </header>
         <header class="header-mobile">
             <a href="index.html">
@@ -94,7 +72,7 @@
                 </div>
             </section>
         </header>
-        <main class="game-page">
+        <!-- <main class="game-page">
             <section class="game-page__section">
                 <div class="game-page__overview">
                     <div class="game-page__section-title">Overview</div>
@@ -153,6 +131,71 @@
                 </div>
                 <div>
                     <img src="media/intergalactic-burger-war/rules-2.svg" id="IBW-rules-2">
+                </div>
+            </section>
+        </main> -->
+        <main class="game-page">
+            <section class="game-page__primary">
+                <div class="game-page__title-wrapper">
+                    <h2>Intergalactic Burger War</h2>
+                    <p>2019</p>
+                </div>
+                <div class="game-page__overview">
+                    <p>
+                        Build burgers, wage war!<em> Intergalactic Burger War</em> is a fast-n-wacky card game where players compete to build the best damn burger in the Cosmos. Gather the galaxy's greatest ingredients while sabotaging your fellow extraterrestrial players–all is fair in burgers and war.
+                    </p>
+                    <div>
+                        <p><b>Genre:</b> Card Game (3-8 players)</p>
+                        <p><b>Team Size:</b> Sole Creator</p>
+                        <p><b>Tools Used:</b> Adobe Illustrator</p>
+                        <p><b>Status:</b> Released</p>
+                    </div>
+                </div>
+                <div class="game-page__play-btn-wrapper">
+                    <a class="game-page__play-btn" href="https://scarybarry.itch.io/intergalactic-burger-war" target="_blank">
+                        <p>download</p>
+                        <div>
+                            <p>&#9654</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="game-page__secondary">
+                <div class="ibw__titlecard-wrapper">
+                    <img src="media/intergalactic-burger-war/logo.svg">
+                </div>
+                <section class="game-page__responsibilities">
+                    <div class="responsibilities__title-wrapper">
+                        <h2>Roles and Responsibilities</h2>
+                    </div>
+                    <h3>Design</h3>
+                    <ul>
+                        <li>
+                            Made the entire game in 10 weeks, traversing the full development pipeline from paper prototype to final showcase
+                        </li>
+                        <li>
+                            Approached the design process from a systems perspective, crafting and fine-tuning a small core of mechanics to produce emergent, chaotic gameplay
+                        </li>
+                        <li>
+                            Regularly play-tested, utilizing players’ feedback to shape each design iteration
+                        </li>
+                    </ul>
+                    <h3>Art</h3>
+                    <ul>
+                        <li>
+                            Combined vintage style with modern UI/UX principles to pack gameplay mechanics into a concise, 1950’s B-movie-inspired card layout
+                        </li>
+                        <li>
+                            Designed all cards in Adobe Illustrator, acquiring competence with it
+                        </li>
+                        <li>
+                            Crafted a rules document that communicates complexity without sacrificing brevity
+                        </li>
+                    </ul>
+                </section>
+                <div class="ibw__screenshots">
+                    <img src="media/intergalactic-burger-war/rules-1.svg">
+                    <img src="media/intergalactic-burger-war/rules-2.svg">
                 </div>
             </section>
         </main>

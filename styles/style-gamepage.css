@@ -34,14 +34,23 @@
 
     display: flex;
     flex-direction: column;
-    row-gap: 1.2rem;
+    justify-content: start;
+    row-gap: 2rem;
 
     padding-top: 6rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 2rem;
 
     background-color: var(--color__dark--accent);
     border-left: 1px solid var(--color__border);
+}
+
+.game-page__overview
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .game-page__primary b
@@ -55,8 +64,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding-top: 1.5rem;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .game-page__title-wrapper h2
@@ -135,7 +143,7 @@
 {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     row-gap: 1rem;
 
     margin-top: 6rem;
@@ -150,6 +158,7 @@
     flex-direction: column;
     row-gap: 1.4rem;
 
+    margin-bottom: 2rem;
     padding: 2rem;
 }
 
@@ -210,6 +219,37 @@
 
 /************************************************/
 /* Media */
+
+
+.ibw__titlecard-wrapper
+{
+    display: flex;
+    justify-content: center;
+
+    width: 70%;
+}
+
+.ibw__titlecard-wrapper img
+{
+    padding: 1rem;
+
+    background-color: var(--color__light--accent);
+}
+
+.ibw__screenshots
+{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+
+    width: 70%;
+}
+
+.ibw__screenshots img
+{   
+    background-color: var(--color__light--accent);
+}
 
 
 

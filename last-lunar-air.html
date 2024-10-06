@@ -8,48 +8,25 @@
         <link rel="stylesheet" href="styles/style-header.css">
         <link rel="stylesheet" href="styles/style-gamepage.css">
         <link rel="stylesheet" href="styles/style-media-queries.css">
-        <link rel="preconnect" href="https://rsms.me/">
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- <div class="transition transition-1 is-active"></div> -->
         <header class="header">
-            <div class="header__top">
-                <p class="header__name">BARRY DAY</p>
-                <p class="header__role">Game Programmer|Designer</p>
+            <a class="header__left" href="index.html">
+                <div class="header__hero-portrait-wrapper">
+                    <img src="media/portraits/hero-portrait.svg">
+                </div>
+                <p class="header__title">scarybarry.dev</p>
+            </a>
+            <div class="header__right">
+                <nav class="header__nav">
+                    <a class="header__nav-link" class="header__nav-resume" href="https://drive.google.com/file/d/1mGSRJxdkBXXygRoFJmblougaWR1bGF-Y/view?usp=sharing" target="_blank">resume</a>
+                    <a class="header__nav-link" class="header__nav-about" href="about.html">about</a>
+                    <a class="header__contact-btn" href="mailto:brday7@gmail.com" target="_blank">contact</a>
+                </nav>
             </div>
-            <nav class="header__bottom">
-                <div class="header__nav">
-                    <a class="header__nav-link" href="index.html">home</a>
-                    <div class="header__games header__nav-link--current" onclick="toggleGamesDropdown()">games
-                        <div class="header__games-dropdown">
-                            <a class="header__nav-link" href="last-lunar-air.html">Last Lunar Air</a>
-                            <a class="header__nav-link" href="horror-game.html">Horror Game</a>
-                            <a class="header__nav-link" href="sally-says-die.html">Sally Says Die!</a>
-                            <a class="header__nav-link" href="intergalactic-burger-war.html">Intergalactic Burger War</a>
-                        </div>
-                    </div>
-                    <a class="header__nav-link" href="https://drive.google.com/file/d/1mGSRJxdkBXXygRoFJmblougaWR1bGF-Y/view?usp=sharing" target="_blank">resume</a>
-                    <a class="header__nav-link" href="about.html">about</a>
-                </div>
-                <div class="header__socials">
-                    <a href="mailto:brday7@gmail.com" target="_blank">
-                        <img src="media/icons/email-icon.svg">
-                    </a>
-                    <a href="https://www.linkedin.com/in/barry-day-18931898/" target="_blank">
-                        <img src="media/icons/linkedin-icon.svg">
-                    </a>
-                    <a href="https://github.com/scarybarry64" target="_blank">
-                        <img src="media/icons/github-icon.svg">
-                    </a>
-                    <a href="https://scarybarry.itch.io/" target="_blank">
-                        <img src="media/icons/itchio-icon.svg">
-                    </a>
-                </div>
-            </nav>
         </header>
         <header class="header-mobile">
             <a href="index.html">
@@ -96,40 +73,47 @@
             </section>
         </header>
         <main class="game-page">
-            <div class="game-page__title">Last Lunar Air</div>
-            <section class="game-page__section">
+            <section class="game-page__primary">
+                <div class="game-page__title-wrapper">
+                    <h2>Last Lunar Air</h2>
+                    <p>2021 - Present</p>
+                </div>
                 <div class="game-page__overview">
-                    <div class="game-page__section-title">Overview</div>
-                    <p class="game-page__overview-paragraph">
-                        <i>Looks like you're low on air. Might as well skate.</i>
+                    <p>
+                        <em>"Looks like you're low on air. Might as well skate."</em>
                     </p>
-                    <p class="game-page__overview-paragraph">
+                    <p>
                         A Gameboy-inspired 2D platformer about skateboarding on the Moon. Oxygen's running low, so do tricks and get air to get air.
                     </p>
-                    <p class="game-page__overview-paragraph">
-                        Made in Unity, devloped entirely solo. Initially created for my scenior capstone game at the University of California, Santa Cruz, further expanded into a full passion project.
-                    <div class="game-page__overview-specs">
+                    <p>
+                        Made in Unity, devloped entirely solo. Initially created as my senior capstone project at the University of California, Santa Cruz - now a full passion project. 
+                    </p>
+                    <div>
                         <p><b>Genre: </b>2D Platformer</p>
                         <p><b>Team Size: </b>Solo Developer</p>
-                        <p><b>Tools Used: </b>Unity, C#, Aseprite, Reaper, FMOD, Git</p>
-                        <p><b>Status: </b> In Development (Playable Demo)</p>
+                        <p><b>Tools Used: </b>Unity, C#, Aseprite, Reaper, FMOD</p>
+                        <p><b>Status: </b> Released [Continued Updates]</p>
                     </div>
                 </div>
-                <div class="game-page__pic-wrapper">
-                    <iframe class="game-page__video" src="https://www.youtube.com/embed/adppgXLABhg?si=ix8zVJptnlDLQGu6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="game-page__play-btn-wrapper">
+                    <a class="game-page__play-btn" href="https://scarybarry.itch.io/last-lunar-air" target="_blank">
+                        <p>play</p>
+                        <div>
+                            <p>&#9654</p>
+                        </div>
+                    </a>
                 </div>
             </section>
-            <section class="game-page__section">
-                <div class="game-page__pic-wrapper">
-                    <img class="game-page__pic-2" src="media/last-lunar-air/last-lunar-air-pic1.svg">
+            <section class="game-page__secondary">
+                <div class="game-page__video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/adppgXLABhg?si=ix8zVJptnlDLQGu6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="game-page__respon">
-                    <div class="game-page__section-title">Responsibilities and Achievements</div>
-                    <div class="game-page__section-subtitle">Programming and Design</div>
-                    <ul class="game-page__respon-list">
-                        <li>
-                            Made the entire game, traversing the full development pipeline and gaining 3+ years of experience in all aspects of game development, with emphasis on programming and design
-                        </li>
+                <section class="game-page__responsibilities">
+                    <div class="responsibilities__title-wrapper">
+                        <h2>Roles and Responsibilities</h2>
+                    </div>
+                    <h3>Programming and Design</h3>
+                    <ul>
                         <li>
                             Built a custom physics engine that combines continuous collision detection with 8-bit pixel-perfect visuals, snapping all physics actors to the pixel grid in real-time while maintaining Newtonian precision
                         </li>
@@ -140,8 +124,8 @@
                             Built a real-time procedurally-generated level system using pseudo-randomized custom prefabs and object pooling, allowing for hybridized levels that mix real-time generation with hand-crafted level design
                         </li>
                     </ul>
-                    <div class="game-page__section-subtitle">Art and Audio</div>
-                    <ul class="game-page__respon-list">
+                    <h3>Art and Audio</h3>
+                    <ul>
                         <li>
                             Created all in-game art assets, designing and animating hundreds of authentic 1-bit pixel art sprites
                         </li>
@@ -158,13 +142,13 @@
                             Implemented pixel art particle FX using the Unity Particle System and 2D Pixel Perfect package
                         </li>
                     </ul>
-                </div>
-            </section>
-            <section class="game-page__screenshots">
-                <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic5.svg">
-                <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic3.svg">
-                <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic4.svg">
-                <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic2.svg">
+                </section>
+                <!-- <section class="game-page__screenshots">
+                    <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic5.svg">
+                    <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic3.svg">
+                    <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic4.svg">
+                    <img class="game-page__pic-screenshot" src="media/last-lunar-air/last-lunar-air-pic2.svg">
+                </section> -->
             </section>
         </main>
         <main class="game-page-mobile">
