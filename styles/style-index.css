@@ -146,6 +146,11 @@
     border: 1px solid var(--color__light);
 }
 
+.ibw__thumbnail
+{
+    background-color: var(--color__light--accent);
+}
+
 
 /*************************************************************************************************/
 /* Games (Mobile) */
