@@ -71,14 +71,6 @@
     }
 }
 
-@media (width <= 900px)
-{
-    .about-page__content
-    {
-        row-gap: 0.5rem;
-    }
-}
-
 
 @media (700px < width <= 900px)
 {

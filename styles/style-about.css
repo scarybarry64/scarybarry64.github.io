@@ -22,15 +22,6 @@
     line-height: 1.5rem;
 }
 
-.about-page__content
-{
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.5rem;
-
-    max-width: 40vw;
-}
-
 .about-page__portrait-wrapper
 {
     /* display: flex;
@@ -44,6 +35,22 @@
     width: 100%;
 
     /* max-height: 18rem; */
+}
+
+.about-page__content
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    max-width: 40vw;
+}
+
+.about-page__title-wrapper
+{
+    padding-bottom: 0.5rem;
+    
+    border-bottom: 1px solid var(--color__border);
 }
 
 /* .about-page__section-title
