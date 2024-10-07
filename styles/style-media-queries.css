@@ -71,6 +71,21 @@
     }
 }
 
+@media (width <= 950px)
+{
+    .game-page
+    {
+        display: none;
+    }
+}
+
+@media (width > 950px)
+{
+    .game-page-mobile
+    {
+        display: none;
+    }
+}
 
 /*************************************************************************************************/
 
@@ -98,8 +113,6 @@
     {
         max-width: calc(100vw - 2 * var(--margin-side));
     }
-    
-    
 
 
 
