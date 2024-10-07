@@ -58,6 +58,20 @@
     }
 }
 
+@media (width <= 1000px)
+{
+    .game-page p, a, em, ul
+    {
+        font-size: 0.9rem;
+    }
+
+    .game-page h2
+    {
+        font-size: 1.5rem;
+    }
+}
+
+
 /*************************************************************************************************/
 
 @media (width <= 800px)
@@ -141,6 +155,12 @@
         margin-right: 4rem;
     } */
 }
+
+@media (width <= 700px)
+{
+
+}
+
 
 @media (550px < width <= 1000px)
 {

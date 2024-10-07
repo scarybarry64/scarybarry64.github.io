@@ -18,7 +18,7 @@
     padding-top: 1.5rem;
     padding-bottom: 1rem;
 
-    background-color: #181818;
+    background-color: var(--color__dark);
     border-bottom: 1px solid var(--color__border);
 
     z-index: 1;
@@ -167,6 +167,10 @@
     translate: 0 0;
 }
 
+.hamburger-nav:has(input:checked) + .header
+{
+    translate: 0 -6rem;
+}
 
 /* .header__games, .header__resume, .header__about
 {
