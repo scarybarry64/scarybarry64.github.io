@@ -50,7 +50,7 @@
     } */
 }
 
-@media (width > 800px)
+@media (width > 750px)
 {
     .header__nav--mobile
     {
@@ -58,7 +58,7 @@
     }
 }
 
-@media (width <= 1000px)
+@media (750px < width <= 1000px)
 {
     .game-page p, a, em, ul
     {
@@ -71,7 +71,7 @@
     }
 }
 
-@media (width <= 950px)
+@media (width <= 750px)
 {
     .game-page
     {
@@ -79,7 +79,7 @@
     }
 }
 
-@media (width > 950px)
+@media (width > 750px)
 {
     .game-page-mobile
     {
@@ -89,7 +89,7 @@
 
 /*************************************************************************************************/
 
-@media (width <= 800px)
+@media (width <= 750px)
 {
     
     .header__nav
@@ -169,13 +169,39 @@
     } */
 }
 
-@media (width <= 700px)
-{
 
+@media (width > 750px) and (650px < height <= 800px)
+{
+    .game-page__title-wrapper
+    {
+        padding-top: 0;
+    }
+
+    .game-page__overview
+    {
+        row-gap: 0.5rem;
+    }
+}
+
+@media (width > 750px) and (height > 650px)
+{
+    .game-page-alt
+    {
+        display: none;
+    }
 }
 
 
-@media (550px < width <= 1000px)
+@media (width > 750px) and (height <= 650px)
+{
+    .game-page
+    {
+        display: none;
+    }
+}
+
+
+@media (550px < width <= 1500px)
 {
     :root
     {
