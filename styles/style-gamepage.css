@@ -145,11 +145,16 @@
 
 .game-page-alt__secondary
 {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
+    display: grid;
 
-    margin-top: 4rem;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1rem;
+}
+
+.game-page-alt__secondary img
+{
+    width: 100%;
 }
 
 .game-page-alt__overview
@@ -176,10 +181,15 @@
     text-transform: uppercase;
 }
 
-.responsibilities--alt
+/* .responsibilities--alt
 {
     float: left;
-}
+} */
+/* 
+.game-page-alt__screenshots
+{
+    float: left;
+} */
 
 /************************************************/
 /* Game Page Primary*/
