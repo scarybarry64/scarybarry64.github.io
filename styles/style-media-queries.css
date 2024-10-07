@@ -114,7 +114,10 @@
         max-width: calc(100vw - 2 * var(--margin-side));
     }
 
-
+    .game-page-alt
+    {
+        display: none;
+    }
 
     /* General */
     
