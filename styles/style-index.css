@@ -5,9 +5,8 @@
 {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 1rem;
 
-    justify-content: space-between;
-    
     margin-top: 6rem;
     margin-left: var(--margin-side);
     margin-right: var(--margin-side);
@@ -17,7 +16,6 @@
 
     /* column-gap: 2rem; */
 
-    column-gap: 2rem;
 
     /* background-color: var(--color__dark--accent); */
 
@@ -60,29 +58,16 @@
 
 .game__link-wrapper
 {
-    height: 100%;
-}
-
-.wrapper-2
-{
     display: flex;
     flex-direction: column;
+    
     height: 100%;
-}
-
-.game__thumbnail-wrapper
-{
-    width: 100%;
-    height: 100%;
-
-    overflow: hidden;
 }
 
 .game__thumbnail
 {
     width: 100%;
-
-    object-fit: cover;
+    aspect-ratio: 16 / 9;
 }
 
 .game__info
