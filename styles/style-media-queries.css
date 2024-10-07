@@ -71,6 +71,47 @@
     }
 }
 
+@media (width <= 900px)
+{
+    .about-page__content
+    {
+        row-gap: 0.5rem;
+    }
+}
+
+
+@media (700px < width <= 900px)
+{
+    .about-page__portrait-wrapper img
+    {
+        max-width: 14rem;
+    }
+}
+
+@media (width <= 700px)
+{
+    .about-page
+    {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        row-gap: 2rem;
+    }
+
+    .about-page__content
+    {
+        max-width: 100%;
+    }
+}
+
+@media (width <= 400px)
+{
+    .about-page__portrait-wrapper img
+    {
+        max-width: 10rem;
+    }
+}
+
 @media (width <= 750px)
 {
     .game-page
