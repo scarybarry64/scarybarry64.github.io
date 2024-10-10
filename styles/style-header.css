@@ -7,6 +7,8 @@
     top: 0;
     left: var(--margin-side);
     right: var(--margin-side);
+
+    z-index: 2;
 }
 
 
